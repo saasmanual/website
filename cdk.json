@@ -1,0 +1,18 @@
+{
+  "app": "bin/infrastructure.js",
+  "context": {
+    "@aws-cdk/core:newStyleStackSynthesis": true,
+    "repo": {
+      "owner": "saasmanual",
+      "name": "website",
+      "secretArn": "",
+      "branch": "main"
+    },
+    "zone": {
+      "hostedZoneId": "",
+      "zoneName": "saasmanual.com"
+    },
+    "certificateArn": "",
+    "hostName": "saasmanual.com"
+  }
+}

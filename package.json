@@ -1,0 +1,27 @@
+{
+  "name": "@saasmanual/website",
+  "version": "0.0.1",
+  "description": "SaaS Manual website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saasmanual/website.git"
+  },
+  "keywords": [
+    "SaaS",
+    "Manual"
+  ],
+  "author": "Nikolai Onken",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/saasmanual/website/issues"
+  },
+  "homepage": "https://github.com/saasmanual/website#readme",
+  "dependencies": {
+    "@aws-cdk/core": "^1.74.0",
+    "@saasmanual/generator": "0.0.4"
+  }
+}
