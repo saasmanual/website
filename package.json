@@ -4,7 +4,15 @@
   "description": "SaaS Manual website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "serve build -l 5001",
+    "build": "NODE_ENV=production rm -rf build && npm run build:assets && npm run build:css && npm run build:website",
+    "build:assets": "mkdir -p ./build/assets && cp -r ./src/assets ./build",
+    "build:css": "postcss ./src/static/css/style.css -c postcss.config.js -o build/static/css/layout.css",
+    "build:sitemap": "node -r esm ./lib/sitemap.js",
+    "build:website": "node -r esm index.js",
+    "watch": "npm run serve & chokidar 'src/**/*' -c 'npm run build:website'",
+    "cdk:deploy": "npx cdk deploy --profile 366378881925_AdministratorAccess",
+    "cdk:destroy": "npx cdk destroy --profile 366378881925_AdministratorAccess"
   },
   "repository": {
     "type": "git",
@@ -23,5 +31,11 @@
   "dependencies": {
     "@aws-cdk/core": "^1.74.0",
     "@saasmanual/generator": "0.0.4"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "postcss-cli": "^8.3.0",
+    "serve": "^11.3.2",
+    "tailwindcss": "^2.0.1"
   }
 }
