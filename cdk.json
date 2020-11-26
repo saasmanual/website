@@ -5,14 +5,14 @@
     "repo": {
       "owner": "saasmanual",
       "name": "website",
-      "secretArn": "",
+      "secretArn": "arn:aws:secretsmanager:us-east-1:629749268625:secret:github/token-dHiwNL",
       "branch": "main"
     },
     "zone": {
-      "hostedZoneId": "",
+      "hostedZoneId": "Z00202153VWI772HLPKTV",
       "zoneName": "saasmanual.com"
     },
-    "certificateArn": "",
+    "certificateArn": "arn:aws:acm:us-east-1:629749268625:certificate/2617b198-29e5-4223-8ca3-d54e6d6f7ead",
     "hostName": "saasmanual.com"
   }
 }
