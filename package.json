@@ -4,13 +4,14 @@
   "description": "SaaS Manual website",
   "main": "index.js",
   "scripts": {
-    "serve": "serve build -l 5001",
+    "dev": "npm run watch & npm run serve",
+    "serve": "livery -p 5001 -w './build/**/*' ./build ",
+    "watch": "chokidar 'src/**/*' -c 'npm run build:website'",
     "build": "NODE_ENV=production rm -rf build && npm run build:assets && npm run build:css && npm run build:website",
+    "build:website": "node -r esm index.js",
     "build:assets": "mkdir -p ./build/assets && cp -r ./src/assets ./build",
     "build:css": "postcss ./src/static/css/style.css -c postcss.config.js -o build/static/css/layout.css",
     "build:sitemap": "node -r esm ./lib/sitemap.js",
-    "build:website": "node -r esm index.js",
-    "watch": "npm run serve & chokidar 'src/**/*' -c 'npm run build:website'",
     "cdk:deploy": "npx cdk deploy --profile 366378881925_AdministratorAccess",
     "cdk:destroy": "npx cdk destroy --profile 366378881925_AdministratorAccess"
   },
@@ -34,8 +35,8 @@
   },
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
+    "livery": "^4.0.0",
     "postcss-cli": "^8.3.0",
-    "serve": "^11.3.2",
     "tailwindcss": "^2.0.1"
   }
 }
