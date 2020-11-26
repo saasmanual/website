@@ -28,7 +28,7 @@ class WebsiteStack extends Stack {
 
     new BucketDeployment(this, 'DeployWebsite', {
       actionName: 'Website Deployment',
-      sources: [Source.asset(join(__dirname, '..', 'build'))],
+      sources: [Source.asset(join(__dirname, '..', '..', 'build'))],
       destinationBucket: websiteAssets,
       cacheControl: [CacheControl.setPublic(), CacheControl.maxAge(Duration.days(365))]
     });

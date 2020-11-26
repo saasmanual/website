@@ -15,8 +15,8 @@
     "watch:css": "chokidar 'src/assets/css/**/*' -c 'npm run build:css'",
     "build:css": "postcss ./src/assets/css/style.css -c postcss.config.js -o build/assets/css/layout.css",
     "build:sitemap": "node -r esm ./lib/sitemap.js",
-    "cdk:deploy": "npx cdk deploy --profile 366378881925_AdministratorAccess",
-    "cdk:destroy": "npx cdk destroy --profile 366378881925_AdministratorAccess"
+    "cdk:deploy": "npx cdk deploy --profile 629749268625_AdministratorAccess",
+    "cdk:destroy": "npx cdk destroy --profile 629749268625_AdministratorAccess"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,10 @@
   },
   "homepage": "https://github.com/saasmanual/website#readme",
   "dependencies": {
-    "@aws-cdk/core": "^1.74.0",
+    "@aws-cdk/aws-codepipeline": "^1.75.0",
+    "@aws-cdk/aws-s3-deployment": "^1.75.0",
+    "@aws-cdk/core": "^1.75.0",
+    "@aws-cdk/pipelines": "^1.75.0",
     "@saasmanual/generator": "0.0.4"
   },
   "devDependencies": {
@@ -43,6 +46,6 @@
     "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
     "postcss-import": "^13.0.0",
-    "tailwindcss": "^2.0.0"
+    "tailwindcss": "^2.0.1"
   }
 }
