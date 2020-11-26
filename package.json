@@ -4,13 +4,16 @@
   "description": "SaaS Manual website",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run watch & npm run serve",
+    "dev": "npm run build:images & npm run build:css & npm run build:website & npm run watch & npm run serve",
     "serve": "livery -p 5001 -w './build/**/*' ./build ",
-    "watch": "chokidar 'src/**/*' -c 'npm run build:website'",
+    "watch": "npm run watch:website & npm run watch:css & npm run watch:images",
     "build": "NODE_ENV=production rm -rf build && npm run build:assets && npm run build:css && npm run build:website",
+    "watch:website": "chokidar 'src/content/**/*' 'template/**/*' -c 'npm run build:website'",
     "build:website": "node -r esm index.js",
-    "build:assets": "mkdir -p ./build/assets && cp -r ./src/assets ./build",
-    "build:css": "postcss ./src/static/css/style.css -c postcss.config.js -o build/static/css/layout.css",
+    "watch:images": "chokidar 'src/assets/img/**/*' -c 'npm run build:assets'",
+    "build:images": "mkdir -p ./build/assets/img && cp -r ./src/assets/img ./build/assets",
+    "watch:css": "chokidar 'src/assets/css/**/*' -c 'npm run build:css'",
+    "build:css": "postcss ./src/assets/css/style.css -c postcss.config.js -o build/assets/css/layout.css",
     "build:sitemap": "node -r esm ./lib/sitemap.js",
     "cdk:deploy": "npx cdk deploy --profile 366378881925_AdministratorAccess",
     "cdk:destroy": "npx cdk destroy --profile 366378881925_AdministratorAccess"
@@ -34,9 +37,12 @@
     "@saasmanual/generator": "0.0.4"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "livery": "^4.0.0",
+    "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
-    "tailwindcss": "^2.0.1"
+    "postcss-import": "^13.0.0",
+    "tailwindcss": "^2.0.0"
   }
 }
