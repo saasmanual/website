@@ -22,7 +22,7 @@ class WebsiteStack extends Stack {
 
     const websiteAssets = new Bucket(this, `${id}-website-production-assets`, {
       accessControl: BucketAccessControl.PUBLIC_READ,
-      bucketName: `website-prod-static-assets`,
+      bucketName: `saas-manual-website-prod-static-assets`,
       publicReadAccess: true
     });
 
