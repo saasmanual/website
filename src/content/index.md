@@ -53,7 +53,7 @@ Secondly, as we embark on this journey, we will come across a number of topics t
 
 The topics below will likely be covered by building [saasmanual.com](http://saasmanual.com). The below table is not a TOC. **It is not complete and it is a work in progress (WIP)**. Feel free to leave comments or ideas on what needs to be covered or what you would love to see covered.
 
-[Topics SaaS Manual covers](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/Topics%20SaaS%20Manual%20covers%20a140045241e645d98a82b90b02a2ca84.csv)
+[Topics SaaS Manual covers](Topics-SaaS-Manual-covers-a140045241e645d98a82b90b02a2ca84.csv)
 
 ## Enough talk, are you in? 🤗
 
@@ -135,19 +135,19 @@ There is nothing more to say, you made it and that is amazing 🙈. If you love 
 
 SaaS Manual was announced on October 15th, 2020. Here are the updates since then.
 
-[2020-10-16 / Launch Metrics](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/2020-10-16%20Launch%20Metrics%208a061c889ba3444eb801cd6ceec183d8.md)
+[2020-10-16 / Launch Metrics](2020-10-16-Launch-Metrics-8a061c889ba3444eb801cd6ceec183d8.html)
 
-[2020-10-22 / Introduction](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d.md)
+[2020-10-22 / Introduction](2020-10-22-Introduction-422e0c9a4939447e8587d4229c2fcd3d.html)
 
-[2020-10-27 / Building Relationships](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16.md)
+[2020-10-27 / Building Relationships](2020-10-27-Building-Relationships-9e2e91f202d14d0fa6a2247b76738a16.html)
 
-[2020-11-03 / Building a website on Notion](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/2020-11-03%20Building%20a%20website%20on%20Notion%20bf98c2cb108e4370b291b375b377eb18.md)
+[2020-11-03 / Building a website on Notion](2020-11-03-Building-a-website-on-Notion-bf98c2cb108e4370b291b375b377eb18.html)
 
-[2020-11-10 / Launching on Product Hunt](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/2020-11-10%20Launching%20on%20Product%20Hunt%204fdb7ef738be4e7f8928731002350177.md)
+[2020-11-10 / Launching on Product Hunt](2020-11-10-Launching-on-Product-Hunt-4fdb7ef738be4e7f8928731002350177.html)
 
-[2020-11-18 / Reinventing The Wheel](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/2020-11-18%20Reinventing%20The%20Wheel%20d3e0460b52784c94938db5cf0e67ee43.md)
+[2020-11-18 / Reinventing The Wheel](2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43.html)
 
-[SaaS Manual Posts](SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27/SaaS%20Manual%20Posts%20a90c47276f6f4fc5a7c74e8945df128c.md)
+[SaaS Manual Posts](SaaS-Manual-Posts-a90c47276f6f4fc5a7c74e8945df128c.html)
 
 That's it, really, no more scrolling!
 
