@@ -10,7 +10,7 @@
     "build": "NODE_ENV=production rm -rf build && npm run build:images && npm run build:css && npm run build:website",
     "watch:website": "chokidar 'src/content/**/*' 'template/**/*' -c 'npm run build:website'",
     "build:website": "node -r esm index.js",
-    "watch:images": "chokidar 'src/assets/img/**/*' -c 'npm run build:assets'",
+    "watch:images": "chokidar 'src/assets/img/**/*' -c 'npm run build:images'",
     "build:images": "mkdir -p ./build/assets/img && cp -r ./src/assets/img ./build/assets",
     "watch:css": "chokidar 'src/assets/css/**/*' -c 'npm run build:css'",
     "build:css": "postcss ./src/assets/css/style.css -c postcss.config.js -o build/assets/css/layout.css",
@@ -40,6 +40,7 @@
     "@saasmanual/generator": "0.0.4"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "livery": "^4.0.0",

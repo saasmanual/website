@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1148px" height="432px" viewBox="0 0 1148 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="BG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.348404657">
+        <g id="Group">
+            <rect id="Rectangle" fill="#EAEAEA" x="0" y="0" width="1148" height="432"></rect>
+            <g id="triangles">
+                <polygon id="Triangle-0" fill="#EEEEEE" points="753 0 835.983192 0 829.284647 114.198831"></polygon>
+                <polygon id="Triangle-1" fill="#E7E7E7" points="753 0 723.808698 23.1766272 555.210087 0"></polygon>
+                <polygon id="Triangle-2" fill="#E2E2E2" points="753 0 829.284647 114.198831 723.808698 23.1766272"></polygon>
+                <polygon id="Triangle-3" fill="#E3E3E3" points="835.983192 0 906.319535 17.3824181 901.797647 41.18169"></polygon>
+                <polygon id="Triangle-4" fill="#EDEDED" points="835.983192 0 872.242682 94.9682617 829.284647 114.198831"></polygon>
+                <polygon id="Triangle-5" fill="#CCCCCC" points="835.983192 0 901.797647 41.18169 872.242682 94.9682617"></polygon>
+                <polygon id="Triangle-6" fill="#EEEEEE" points="906.319535 17.3824181 1088.99847 0 901.797647 41.18169"></polygon>
+                <polygon id="Triangle-7" fill="#EDEDED" points="1088.99847 0 1148 137.998466 964.486008 190.233452"></polygon>
+                <polygon id="Triangle-8" fill="#DCDCDC" points="1088.99847 0 964.486008 190.233452 901.797647 41.18169"></polygon>
+                <polygon id="Triangle-9" fill="#DBDBDB" points="1148 137.998466 1147.30389 234.078814 1014.01195 232.991402"></polygon>
+                <polygon id="Triangle-10" fill="#CCCCCC" points="1148 137.998466 1014.01195 232.991402 964.486008 190.233452"></polygon>
+                <polygon id="Triangle-11" fill="#EEEEEE" points="1147.30389 234.078814 1123.50938 369.99998 1123.04359 369.524499"></polygon>
+                <polygon id="Triangle-12" fill="#D2D2D2" points="1147.30389 234.078814 1123.04359 369.524499 1014.01195 232.991402"></polygon>
+                <polygon id="Triangle-13" fill="#CECECE" points="1123.04359 369.524499 1001.63618 432 1009.52491 401.37749"></polygon>
+                <polygon id="Triangle-14" fill="#DFDFDF" points="1123.04359 369.524499 971.177265 342.354393 1014.01195 232.991402"></polygon>
+                <polygon id="Triangle-15" fill="#E4E4E4" points="1123.04359 369.524499 1009.52491 401.37749 971.177265 342.354393"></polygon>
+                <polygon id="Triangle-16" fill="#EAEAEA" points="1001.63618 432 805.636182 432 971.177265 342.354393"></polygon>
+                <polygon id="Triangle-17" fill="#D2D2D2" points="1001.63618 432 971.177265 342.354393 1009.52491 401.37749"></polygon>
+                <polygon id="Triangle-18" fill="#ECECEC" points="805.636182 432 608.636182 432 691.012975 370.951793"></polygon>
+                <polygon id="Triangle-19" fill="#E4E4E4" points="805.636182 432 691.012975 370.951793 883.292595 134.86436"></polygon>
+                <polygon id="Triangle-20" fill="#DDDDDD" points="805.636182 432 883.292595 134.86436 971.177265 342.354393"></polygon>
+                <polygon id="Triangle-21" fill="#E9E9E9" points="608.636182 432 412.636182 432 516.576376 403.52155"></polygon>
+                <polygon id="Triangle-22" fill="#EDEDED" points="608.636182 432 516.576376 403.52155 589.456209 334.778863"></polygon>
+                <polygon id="Triangle-23" fill="#ECECEC" points="608.636182 432 589.456209 334.778863 691.012975 370.951793"></polygon>
+                <polygon id="Triangle-24" fill="#DDDDDD" points="412.636182 432 216.636182 432 269.226015 390.102426"></polygon>
+                <polygon id="Triangle-25" fill="#DCDCDC" points="412.636182 432 499.627037 300.050301 516.576376 403.52155"></polygon>
+                <polygon id="Triangle-26" fill="#EAEAEA" points="412.636182 432 269.226015 390.102426 499.627037 300.050301"></polygon>
+                <polygon id="Triangle-27" fill="#E2E2E2" points="216.636182 432 20.6361822 432 85.2393764 407.141436"></polygon>
+                <polygon id="Triangle-28" fill="#D6D6D6" points="216.636182 432 85.2393764 407.141436 140.579472 287.25221"></polygon>
+                <polygon id="Triangle-29" fill="#E0E0E0" points="216.636182 432 140.579472 287.25221 269.226015 390.102426"></polygon>
+                <polygon id="Triangle-30" fill="#CCCCCC" points="20.6361822 432 0 255.636182 85.2393764 407.141436"></polygon>
+                <polygon id="Triangle-31" fill="#D0D0D0" points="0 255.636182 57.72069 198.330666 140.579472 287.25221"></polygon>
+                <polygon id="Triangle-32" fill="#DDDDDD" points="0 255.636182 140.579472 287.25221 85.2393764 407.141436"></polygon>
+                <polygon id="Triangle-33" fill="#DEDEDE" points="57.72069 198.330666 0 56.8167051 163.210087 0"></polygon>
+                <polygon id="Triangle-34" fill="#EDEDED" points="57.72069 198.330666 163.210087 0 140.579472 287.25221"></polygon>
+                <polygon id="Triangle-35" fill="#EDEDED" points="163.210087 0 359.210087 0 327.541964 38.474048"></polygon>
+                <polygon id="Triangle-36" fill="#D8D8D8" points="163.210087 0 327.541964 38.474048 140.579472 287.25221"></polygon>
+                <polygon id="Triangle-37" fill="#EEEEEE" points="359.210087 0 555.210087 0 451.38338 73.5665064"></polygon>
+                <polygon id="Triangle-38" fill="#CFCFCF" points="359.210087 0 451.38338 73.5665064 327.541964 38.474048"></polygon>
+                <polygon id="Triangle-39" fill="#EEEEEE" points="555.210087 0 723.808698 23.1766272 633.347095 227.190641"></polygon>
+                <polygon id="Triangle-40" fill="#D0D0D0" points="555.210087 0 633.347095 227.190641 451.38338 73.5665064"></polygon>
+                <polygon id="Triangle-41" fill="#D8D8D8" points="516.576376 403.52155 499.627037 300.050301 589.456209 334.778863"></polygon>
+                <polygon id="Triangle-42" fill="#DFDFDF" points="723.808698 23.1766272 829.284647 114.198831 633.347095 227.190641"></polygon>
+                <polygon id="Triangle-43" fill="#CECECE" points="829.284647 114.198831 691.012975 370.951793 633.347095 227.190641"></polygon>
+                <polygon id="Triangle-44" fill="#E1E1E1" points="829.284647 114.198831 872.242682 94.9682617 883.292595 134.86436"></polygon>
+                <polygon id="Triangle-45" fill="#CDCDCD" points="829.284647 114.198831 883.292595 134.86436 691.012975 370.951793"></polygon>
+                <polygon id="Triangle-46" fill="#E8E8E8" points="1014.01195 232.991402 971.177265 342.354393 964.486008 190.233452"></polygon>
+                <polygon id="Triangle-47" fill="#EEEEEE" points="499.627037 300.050301 430.447518 182.001133 633.347095 227.190641"></polygon>
+                <polygon id="Triangle-48" fill="#E1E1E1" points="499.627037 300.050301 633.347095 227.190641 589.456209 334.778863"></polygon>
+                <polygon id="Triangle-49" fill="#E9E9E9" points="499.627037 300.050301 269.226015 390.102426 430.447518 182.001133"></polygon>
+                <polygon id="Triangle-50" fill="#EEEEEE" points="140.579472 287.25221 327.541964 38.474048 430.447518 182.001133"></polygon>
+                <polygon id="Triangle-51" fill="#D1D1D1" points="140.579472 287.25221 430.447518 182.001133 269.226015 390.102426"></polygon>
+                <polygon id="Triangle-52" fill="#E4E4E4" points="964.486008 190.233452 971.177265 342.354393 883.292595 134.86436"></polygon>
+                <polygon id="Triangle-53" fill="#CCCCCC" points="964.486008 190.233452 883.292595 134.86436 901.797647 41.18169"></polygon>
+                <polygon id="Triangle-54" fill="#CDCDCD" points="327.541964 38.474048 451.38338 73.5665064 430.447518 182.001133"></polygon>
+                <polygon id="Triangle-55" fill="#D9D9D9" points="691.012975 370.951793 589.456209 334.778863 633.347095 227.190641"></polygon>
+                <polygon id="Triangle-56" fill="#CFCFCF" points="451.38338 73.5665064 633.347095 227.190641 430.447518 182.001133"></polygon>
+                <polygon id="Triangle-57" fill="#EAEAEA" points="872.242682 94.9682617 901.797647 41.18169 883.292595 134.86436"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

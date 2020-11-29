@@ -1,9 +1,3 @@
-# SaaS Manual
-
-## Learn how to build "Software as a Service" products from scratch
-
-SaaS Manual teaches you how to build commercial software services that are production-ready, scalable, maintainable, and secure. It teaches you all of this from scratch. 
-
 **Warning:**  Keep reading only if you are ready for inception. 
 
 [https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
