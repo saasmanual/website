@@ -1,3 +1,6 @@
+::toc{toc=toc.json}
+
+
 **Warning:**  Keep reading only if you are ready for inception. 
 
 [https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
