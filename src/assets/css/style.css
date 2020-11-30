@@ -4,16 +4,16 @@
 
 h1 {
   @apply text-3xl;
-  @apply mb-4;
+  @apply mb-8;
 }
 
 h2 {
   @apply text-2xl;
-  @apply mb-4;
+  @apply mb-8;
 }
 
 p {
-  @apply mb-4;
+  @apply mb-8;
 }
 
 a {
@@ -21,7 +21,11 @@ a {
 }
 
 hr {
-  @apply mb-4;
+  @apply mb-8;
+}
+
+ul {
+  @apply mb-8;
 }
 
 blockquote {
@@ -33,7 +37,7 @@ blockquote {
 }
 
 .alert {
-  @apply my-4;
+  @apply my-8;
   @apply rounded-md;
   @apply p-4;
 }

@@ -74,23 +74,18 @@ This page really is the blueprint for the idea. The whole point of [saasmanual.c
 ## FAQ
 
 **Is SaaS Manual good for a beginner dipping the toes into building software services?**
-
 Absolutely. SaaS Manual will go through each and every step in the journey of building a software product. And if something is not clear, you can ask and I will update the content of the course.
 
 **What does SaaS Manual cost?**
-
 Currently, it is free. Future prices will depend on when we will implement the billing/subscription part of the service. Because, really, what would be a SaaS product without subscriptions??? Can't go without it + I need to buy food 🥕. And there will be a free tier, for sure. 
 
 **Isn't it super expensive to run my own SaaS product?**
-
 Not with SaaS Manual. We will rely on services like Lambda or DynamoDB which only charge when you actually use them. So if your service doesn't make any money, you won't lose any money. It's a win-win.
 
 **Is this the only way to build SaaS products?**
-
 No. Imagine we only had one music style in the world. Argh, that would be kind of sad! SaaS Manual teaches you one way, the way which hopefully will make [saasmanual.com](http://saasmanual.com) a successful and useful product for people who love to build. There are a million other ways. Hopefully, this way will inspire you to go out and find your own way.
 
 **What Cloud provider will you use to teach SaaS Manual?**
-
 We'll be using AWS. The concepts should be translatable to any cloud provider with a similar product offering as AWS. Also, and of course, I am biased 🙈, AWS is really quite cool!
 
 ## SaaS Manual principles
@@ -118,14 +113,6 @@ Content for SaaS Manual gets reviewed by experts in their field. Thank you for y
 
 - Reshen Amin
 - Justin Dray
-
-## Notes
-
-[^1]: Except for customer data or any personally identifiable information (PII) which would violate privacy legislation.
-
-[^2]: Except for the secrets which are required to access certain paid AWS accounts/services, because, yep, those are real secrets and we can't provide free AWS accounts to the world 😅
-
-[^3]: If I wasn't into software I would have built a course similar to this amazing project in France. [They built a castle from scratch](https://en.wikipedia.org/wiki/Gu%C3%A9delon_Castle)! I mean, how amazing is that??? Maybe the next version will be actually building a house, who knows?
 
 ## You made it until here, wohooo!
 
@@ -545,3 +532,9 @@ Ah, before I forget: You can [follow me on Twitter here](https://twitter.com/non
 &nbsp;
 &nbsp;
 ❤️ The End.
+
+[^1]: Except for customer data or any personally identifiable information (PII) which would violate privacy legislation.
+
+[^2]: Except for the secrets which are required to access certain paid AWS accounts/services, because, yep, those are real secrets and we can't provide free AWS accounts to the world 😅
+
+[^3]: If I wasn't into software I would have built a course similar to this amazing project in France. [They built a castle from scratch](https://en.wikipedia.org/wiki/Gu%C3%A9delon_Castle)! I mean, how amazing is that??? Maybe the next version will be actually building a house, who knows?
