@@ -4,10 +4,12 @@
 
 h1 {
   @apply text-3xl;
+  @apply mb-4;
 }
 
 h2 {
   @apply text-2xl;
+  @apply mb-4;
 }
 
 p {
@@ -34,7 +36,6 @@ blockquote {
 
 .alert p {
   @apply mb-0;
-  @apply text-sm; 
   @apply font-medium; 
 }
 
