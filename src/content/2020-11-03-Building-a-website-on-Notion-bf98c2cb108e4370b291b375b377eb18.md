@@ -1,4 +1,10 @@
-# 2020-11-03 / Building a website on Notion
+---
+layout: post.njk
+title: Building a website on Notion
+description: Learn how to build SaaS products from scratch.
+---
+
+# Building a website on Notion
 
 Before I will dive into the topic of this week, I want to announce the [SaaS Manual Discord channel](https://discord.gg/gGTD6eX). The purpose of this channel is to create a space for us to exchange ideas, questions, feedback, or really anything related to building SaaS projects. If you are curious about it please [feel welcome to join here](https://discord.gg/gGTD6eX).
 
@@ -6,7 +12,7 @@ I also want to thank a few folks: Reshen Amin and Justin Dray for reviewing the 
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
-[https://landing.mailerlite.com/webforms/landing/x7p9e7](https://landing.mailerlite.com/webforms/landing/x7p9e7)
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
 Welcome! Time for another post 🎉 Now that you have some context on [why I started SaaS Manual](2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d.md), it finally is time to dive into how I launched the initial landing page at [https://saasmanual.com](https://saasmanual.com). With a very tiny budget and in a very short amount of time.
 

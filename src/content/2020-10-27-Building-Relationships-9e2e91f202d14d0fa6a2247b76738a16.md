@@ -1,8 +1,14 @@
-# 2020-10-27 / Building Relationships
+---
+layout: post.njk
+title: Building Relationships
+description: Learn how to build SaaS products from scratch.
+---
+
+# Building Relationships
 
 If you haven't signed up for this course yet, you can do so below:
 
-[https://landing.mailerlite.com/webforms/landing/x7p9e7](https://landing.mailerlite.com/webforms/landing/x7p9e7)
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
 I hope you had a really good start to this new week. Get ready for another SaaS Manual post. If this is your first email, you can [find previous posts here](../SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27.md).
 
