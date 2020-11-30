@@ -1,6 +1,7 @@
 ---
 layout: layout.njk
 title: SaaS Manual
+description: Learn how to build SaaS products from scratch.
 ---
 
 :::alert
