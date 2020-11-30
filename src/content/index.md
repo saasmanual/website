@@ -1,6 +1,6 @@
+:::alert
 **Warning:**  Keep reading only if you are ready for inception. 
-
-[https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
+:::
 
 ## Curious? Read on, you are at the right place 🤗
 
@@ -45,7 +45,9 @@ To begin with, you will learn how to build a complete SaaS product from scratch,
 
 Secondly, as we embark on this journey, we will come across a number of topics that I wrote down below. Basically a brain-dump of my experience over the past 20 years. We might never get to cover some topics because they won't be needed to make SaaS Manual a successful product, but we also might. In my experience, we will cover most... eventually.
 
+:::alert
 The topics below will likely be covered by building [saasmanual.com](http://saasmanual.com). The below table is not a TOC. **It is not complete and it is a work in progress (WIP)**. Feel free to leave comments or ideas on what needs to be covered or what you would love to see covered.
+:::
 
 ::toc
 

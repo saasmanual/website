@@ -17,3 +17,33 @@ p {
 a {
   @apply underline;
 }
+
+blockquote {
+  @apply border-l-4;
+  @apply border-gray-400;
+  @apply pl-4;
+  @apply text-gray-700;
+  @apply text-lg;
+}
+
+.alert {
+  @apply my-4;
+  @apply rounded-md;
+  @apply p-4;
+}
+
+.alert p {
+  @apply mb-0;
+  @apply text-sm; 
+  @apply font-medium; 
+}
+
+.alert-success {
+  @apply bg-green-50;
+  @apply text-green-800;
+}
+
+.alert-warning {
+  @apply bg-green-50;
+  @apply text-green-800;
+}
