@@ -52,3 +52,16 @@ blockquote {
   @apply bg-green-50;
   @apply text-green-800;
 }
+
+.footnotes {
+  @apply text-sm; 
+}
+
+.footnotes li {
+  @apply mb-4;
+}
+
+.footnotes li a:last-child {
+  @apply ml-2;
+  @apply no-underline;
+}

@@ -4,6 +4,7 @@ import breaks from 'remark-breaks';
 import toc from './src/lib/toc';
 import alert from './src/lib/alert';
 import iframe from './src/lib/iframe';
+import footnotes from 'remark-footnotes';
 
 (new Generator)
   .templates('./template')
@@ -12,6 +13,7 @@ import iframe from './src/lib/iframe';
   .useRemarkPlugin(alert)
   .useRemarkPlugin(breaks)
   .useRemarkPlugin(iframe)
+  .useRemarkPlugin(footnotes, {inlineNotes: true})
   .source('./src/content')
   .destination('./build')
   .build();

@@ -30,11 +30,11 @@ You might say, "B*ut pleeeeaaaase, not another TODO list, pleeease??"*. I got yo
 
 SaaS Manual will become a fully-fledged product. Call it a learning platform. With accounts, billing, a public/private API, static and dynamic pages, a CDN, infrastructure as code, CI/CD, serverless and so much more (don't worry if those words don't mean a thing to you just yet). 
 
-Everything will be public[¹]() and there won't be any hidden secrets[²]() or parts where you’d wonder "how do they really work?". And we won't rely on too many external tools or frameworks, so you’ll really get to learn and see what it takes to build a software product. It is the real deal.
+Everything will be public [^1] and there won't be any hidden secrets[^2] or parts where you’d wonder "how do they really work?". And we won't rely on too many external tools or frameworks, so you’ll really get to learn and see what it takes to build a software product. It is the real deal.
 
 In other words:
 
-> Imagine you are going to build a house, from scratch, for real, finding some land, stacking the bricks, building a roof, until you can move in[³](). You will make many mistakes, like forgetting a wall, placing sockets in the wrong places, making a measuring mistake... But you'll get it done. And you'll be so happy that you did. Because you’ve learned invaluable lessons in building your own house.
+> Imagine you are going to build a house, from scratch, for real, finding some land, stacking the bricks, building a roof, until you can move in[^3]. You will make many mistakes, like forgetting a wall, placing sockets in the wrong places, making a measuring mistake... But you'll get it done. And you'll be so happy that you did. Because you’ve learned invaluable lessons in building your own house.
 
 **With SaaS Manual, you can join the journey of building a complete software service.
 From scratch.**
@@ -121,11 +121,11 @@ Content for SaaS Manual gets reviewed by experts in their field. Thank you for y
 
 ## Notes
 
-[1] Except for customer data or any personally identifiable information (PII) which would violate privacy legislation.
+[^1]: Except for customer data or any personally identifiable information (PII) which would violate privacy legislation.
 
-[2] Except for the secrets which are required to access certain paid AWS accounts/services, because, yep, those are real secrets and we can't provide free AWS accounts to the world 😅
+[^2]: Except for the secrets which are required to access certain paid AWS accounts/services, because, yep, those are real secrets and we can't provide free AWS accounts to the world 😅
 
-[3] If I wasn't into software I would have built a course similar to this amazing project in France. [They built a castle from scratch](https://en.wikipedia.org/wiki/Gu%C3%A9delon_Castle)! I mean, how amazing is that??? Maybe the next version will be actually building a house, who knows?
+[^3]: If I wasn't into software I would have built a course similar to this amazing project in France. [They built a castle from scratch](https://en.wikipedia.org/wiki/Gu%C3%A9delon_Castle)! I mean, how amazing is that??? Maybe the next version will be actually building a house, who knows?
 
 ## You made it until here, wohooo!
 
@@ -138,17 +138,11 @@ There is nothing more to say, you made it and that is amazing 🙈. If you love 
 SaaS Manual was announced on October 15th, 2020. Here are the updates since then.
 
 [2020-10-16 / Launch Metrics](2020-10-16-Launch-Metrics-8a061c889ba3444eb801cd6ceec183d8.html)
-
 [2020-10-22 / Introduction](2020-10-22-Introduction-422e0c9a4939447e8587d4229c2fcd3d.html)
-
 [2020-10-27 / Building Relationships](2020-10-27-Building-Relationships-9e2e91f202d14d0fa6a2247b76738a16.html)
-
 [2020-11-03 / Building a website on Notion](2020-11-03-Building-a-website-on-Notion-bf98c2cb108e4370b291b375b377eb18.html)
-
 [2020-11-10 / Launching on Product Hunt](2020-11-10-Launching-on-Product-Hunt-4fdb7ef738be4e7f8928731002350177.html)
-
 [2020-11-18 / Reinventing The Wheel](2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43.html)
-
 [SaaS Manual Posts](SaaS-Manual-Posts-a90c47276f6f4fc5a7c74e8945df128c.html)
 
 That's it, really, no more scrolling!
