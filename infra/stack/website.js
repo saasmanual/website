@@ -30,7 +30,8 @@ class WebsiteStack extends Stack {
       actionName: 'Website Deployment',
       sources: [Source.asset(join(__dirname, '..', '..', 'build'))],
       destinationBucket: websiteAssets,
-      cacheControl: [CacheControl.setPublic(), CacheControl.maxAge(Duration.days(365))]
+      cacheControl: [CacheControl.setPublic(), CacheControl.maxAge(Duration.days(365))],
+      prune: false
     });
 
     this.productionDistribution = new CloudFrontWebDistribution(this, `${id}-website-production-distribution`, {
