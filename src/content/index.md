@@ -1,3 +1,8 @@
+---
+layout: layout.njk
+title: SaaS Manual
+---
+
 :::alert
 **Warning:**  Keep reading only if you are ready for inception. 
 :::
