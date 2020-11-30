@@ -1,6 +1,3 @@
-::toc{toc=toc.json}
-
-
 **Warning:**  Keep reading only if you are ready for inception. 
 
 [https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
@@ -50,7 +47,7 @@ Secondly, as we embark on this journey, we will come across a number of topics t
 
 The topics below will likely be covered by building [saasmanual.com](http://saasmanual.com). The below table is not a TOC. **It is not complete and it is a work in progress (WIP)**. Feel free to leave comments or ideas on what needs to be covered or what you would love to see covered.
 
-[Topics SaaS Manual covers](Topics-SaaS-Manual-covers-a140045241e645d98a82b90b02a2ca84.csv)
+::toc
 
 ## Enough talk, are you in? 🤗
 

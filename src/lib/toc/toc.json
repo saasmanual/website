@@ -1,0 +1,54 @@
+[{
+  "title": "Development"
+}, {
+  "title": "Testing"
+}, {
+  "title": "Infrastructure"
+}, {
+  "title": "Deployment"
+}, {
+  "title": "Operations"
+}, {
+  "title": "Serverless"
+}, {
+  "title": "Backend"
+}, {
+  "title": "Frontend / Clients"
+}, {
+  "title": "CDN / Static Assets"
+}, {
+  "title": "Security"
+}, {
+  "title": "Analytics"
+}, {
+  "title": "Performance"
+}, {
+  "title": "Networking"
+}, {
+  "title": "Licensing"
+}, {
+  "title": "Compliance"
+}, {
+  "title": "Customer Support"
+}, {
+  "title": "API",
+  "tags": ["feature"]
+}, {
+  "title": "Account Management",
+  "tags": ["feature"]
+}, {
+  "title": "Billing",
+  "tags": ["feature"]
+}, {
+  "title": "Blog",
+  "tags": ["feature"]
+}, {
+  "title": "Documentation",
+  "tags": ["feature"]
+}, {
+  "title": "Teams / Orgs",
+  "tags": ["feature"]
+}, {
+  "title": "Landing Page",
+  "tags": ["feature"]
+}]
