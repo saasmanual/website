@@ -43,7 +43,7 @@ From scratch.**
 
 SaaS Manual currently exists only on this page. The domain [saasmanual.com](https://saasmanual.com), Twitter handle [@saasmanual](https://twitter.com/saasmanual), [Facebook page](https://www.facebook.com/saasmanual/), and [GitHub organization](https://github.com/saasmanual) have been created but nothing else exists. Sign up below, if you want to join this journey. I promise it will be fun and insightful. And in case you wonder what the first lesson will be? It most likely will be the **creation of the actual SaaS Manual landing page.** 
 
-[https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
 # What will you learn?
 
@@ -61,7 +61,7 @@ The topics below will likely be covered by building [saasmanual.com](http://saas
 
 Ok, this should give you an idea of what you will embark on if you decide to join this adventure. Leave your email below and you will be the first to get notified of the next steps of building SaaS Manual.
 
-[https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
 ## Ideas for SaaS Manual?
 
@@ -131,7 +131,7 @@ Content for SaaS Manual gets reviewed by experts in their field. Thank you for y
 
 There is nothing more to say, you made it and that is amazing 🙈. If you love the idea, join the journey below, it'll be a fun ride 🙏🏻.
 
-[https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
 ## Updates
 
@@ -159,7 +159,7 @@ Stop it!!! Really, its done! 😇 🥴
 
 Ok ok, you won!!! In case you didn't join the SaaS Manual adventure yet, here you go 🤗:
 
-[https://landing.mailerlite.com/webforms/landing/b4c8x1](https://landing.mailerlite.com/webforms/landing/b4c8x1)
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
 ❤️
 

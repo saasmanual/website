@@ -14,18 +14,15 @@ function toc() {
   }
 
   function ondirective(node) {
-    let hast;
-    let data = node.data || (node.data = {})
-    if (node.type === 'leafDirective' && node.name === 'toc') {
-      const renderedTemplate = nunjucks.render(join(__dirname, 'toc.njk'), {
-        'items': tocItems
-      });
-      const p5ast = parse5.parseFragment(String(renderedTemplate), { sourceCodeLocationInfo: true })
-      hast = fromParse5(p5ast, renderedTemplate);
-    } else {
-      hast = h(node.name, node.attributes)
-    }
+    if (node.name !== 'toc' || node.type !== 'leafDirective') return;
 
+    let data = node.data || (node.data = {})
+    const renderedTemplate = nunjucks.render(join(__dirname, 'toc.njk'), {
+      'items': tocItems
+    });
+    const p5ast = parse5.parseFragment(String(renderedTemplate), { sourceCodeLocationInfo: true })
+    const hast = fromParse5(p5ast, renderedTemplate);
+  
     data.hName = hast.tagName;
     data.hProperties = hast.properties;
     data.hChildren = hast.children;

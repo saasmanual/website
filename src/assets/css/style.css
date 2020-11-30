@@ -20,6 +20,10 @@ a {
   @apply underline;
 }
 
+hr {
+  @apply mb-4;
+}
+
 blockquote {
   @apply border-l-4;
   @apply border-gray-400;

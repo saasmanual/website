@@ -1,27 +1,27 @@
 import visit from 'unist-util-visit';
 import h from 'hastscript';
 
-function alert() {
+function iframe() {
   return transform;
 
   function transform(tree) {
-    visit(tree, ['containerDirective'], ondirective)
+    visit(tree, ['textDirective'], ondirective)
   }
 
   function ondirective(node) {
-    if (node.name !== 'alert') return;
+    if (node.name !== 'iframe') return;
 
     const data = node.data || (node.data = {});
-    const type = node.attributes.type || 'success';
-    const hast = h('div', {
-      className: `alert alert-${type}`
+    const hast = h('iframe', {
+      src: node.attributes.src,
+      width: node.attributes.width || '100%',
+      height: node.attributes.height || '250'
     })
- 
     data.hName = hast.tagName
     data.hProperties = hast.properties
   }
 }
 
 export {
-  alert as default
+  iframe as default
 }
