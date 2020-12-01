@@ -4,6 +4,7 @@ import breaks from 'remark-breaks';
 import toc from './src/lib/toc';
 import alert from './src/lib/alert';
 import iframe from './src/lib/iframe';
+import floatingImage from './src/lib/floating-image';
 import footnotes from 'remark-footnotes';
 
 (new Generator)
@@ -11,8 +12,9 @@ import footnotes from 'remark-footnotes';
   .useRemarkPlugin(directive)
   .useRemarkPlugin(toc)
   .useRemarkPlugin(alert)
-  .useRemarkPlugin(breaks)
+  .useRemarkPlugin(floatingImage)
   .useRemarkPlugin(iframe)
+  .useRemarkPlugin(breaks)
   .useRemarkPlugin(footnotes, {inlineNotes: true})
   .source('./src/content')
   .destination('./build')

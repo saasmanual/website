@@ -1,6 +1,9 @@
 module.exports = {
   plugins: [require('@tailwindcss/forms')],
   theme: {
+    maxWidth: {
+      'prose': '75ch'
+    },
     extend: {
       colors: {
         pink: {
