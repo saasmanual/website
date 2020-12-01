@@ -1,9 +1,6 @@
 module.exports = {
   plugins: [require('@tailwindcss/forms')],
   theme: {
-    maxWidth: {
-      'prose': '75ch'
-    },
     extend: {
       colors: {
         pink: {
@@ -12,7 +9,10 @@ module.exports = {
       },  
       backgroundImage: theme => ({
        'hero-pattern': "url('/assets/img/background-grey.svg')"
-      })
+      }),
+      maxWidth: {
+        'prose': '75ch'
+      },
     }
   }
 }
