@@ -7,7 +7,7 @@
     "dev": "npm run build:images & npm run build:css & npm run build:js & npm run build:website & npm run watch & npm run serve",
     "serve": "livery -p 5001 -w './build/**/*' ./build ",
     "watch": "npm run watch:website & npm run watch:css & npm run watch:images & npm run watch:js",
-    "build": "NODE_ENV=production rm -rf build && npm run build:images && npm run build:css && npm run build:website",
+    "build": "NODE_ENV=production rm -rf build && npm run build:images && npm run build:css && npm run build:js && npm run build:website",
     "watch:website": "chokidar 'src/content/**/*' 'template/**/*' -c 'npm run build:website'",
     "build:website": "node -r esm index.js",
     "watch:images": "chokidar 'src/assets/img/**/*' -c 'npm run build:images'",
