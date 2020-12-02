@@ -1,5 +1,9 @@
 module.exports = {
-  plugins: [require('@tailwindcss/forms')],
+  important: true, // Remove when https://github.com/tailwindlabs/tailwindcss-typography/issues/32 has a solution.
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
+  ],
   theme: {
     extend: {
       colors: {
@@ -11,7 +15,7 @@ module.exports = {
        'hero-pattern': "url('/assets/img/background-grey.svg')"
       }),
       maxWidth: {
-        'prose': '75ch'
+        'prose': '65ch'
       },
     }
   }

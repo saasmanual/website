@@ -10,7 +10,7 @@ description: Learn how to build SaaS products from scratch.
 
 ## Curious? Read on, you are at the right place 🤗
 
-:::floating-image{image=/assets/img/nikolai.png width=220}
+:::floating-image{image=/assets/img/nikolai.png width=200}
 I ([find me here on Twitter](https://twitter.com/nonken)) started working on the web around 1996 and since then was fortunate to build many SaaS products with incredibly talented people, including most recently, [Cloud9 IDE](https://aws.amazon.com/cloud9/) as the VP of Engineering. 
 
 **Cloud9 IDE was acquired by AWS** and I have spent the past three years at Amazon, gaining a lot of valuable insight and learning many lessons on how to build and operate software systems at scale. It's time to share this knowledge with you.

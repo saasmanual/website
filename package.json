@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "livery": "^4.0.0",

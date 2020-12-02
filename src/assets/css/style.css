@@ -2,28 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-h1 {
-  @apply text-3xl;
-  @apply mb-8;
-}
-
-h2 {
-  @apply text-2xl;
-  @apply mb-8;
-}
-
-p {
-  @apply mb-8;
-}
-
-a {
-  @apply underline;
-}
-
-hr {
-  @apply mb-8;
-}
-
 ul {
   @apply mb-8;
 }
@@ -43,16 +21,18 @@ blockquote {
 }
 
 .alert p {
-  @apply mb-0;
+  @apply my-0;
   @apply font-medium; 
 }
 
-.alert-success {
+.alert.alert-success,
+.alert.alert-success * {
   @apply bg-green-50;
   @apply text-green-800;
 }
 
-.alert-warning {
+.alert.alert-warning,
+.alert.alert-warning * {
   @apply bg-green-50;
   @apply text-green-800;
 }
@@ -68,4 +48,18 @@ blockquote {
 .footnotes li a:last-child {
   @apply ml-2;
   @apply no-underline;
+}
+
+ul.toc li {
+  @apply p-0;
+  @apply m-0;
+}
+
+ul.toc li::before {
+  @apply hidden;
+}
+
+ul.toc h3 {
+  @apply p-0;
+  @apply m-0;
 }
