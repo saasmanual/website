@@ -2,8 +2,12 @@
   {% include './include/head.njk' %}
   <body>
     {% include './include/navigation.njk' %}
-    {{ background }}
-    <div class="max-w-prose mx-auto mt-12">
+    {% if background %}
+    <div class="h-96 overflow-hidden"> 
+      <img src="/assets/img/{{ background }}" class="w-full h-full object-cover object-center" />
+    </div>
+    {% endif %}
+    <div class="max-w-prose prose prose-pink prose-lg text-gray-700 mx-auto mt-12 pb-24">
       {{ content|safe }}
     </div>
   </body>

@@ -2,7 +2,7 @@
 layout: post.njk
 title: Launch Metrics
 description: Learn how to build SaaS products from scratch.
-background: img.png
+background: posts/zandvoort-bird.jpeg
 ---
 
 # Launch Metrics
