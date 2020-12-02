@@ -2,7 +2,8 @@
 layout: post.njk
 title: Introduction
 description: Learn how to build SaaS products from scratch.
-background: posts/zandvoort-sun.jpeg
+cover: posts/zandvoort-sun.jpeg
+author: nonken
 ---
 
 # Introduction

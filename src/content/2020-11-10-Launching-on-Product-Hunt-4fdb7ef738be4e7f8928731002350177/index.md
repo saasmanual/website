@@ -2,7 +2,8 @@
 layout: post.njk
 title: Launching on Product Hunt
 description: Learn how to build SaaS products from scratch.
-background: posts/erp-sunset.jpeg
+cover: posts/erp-sunset.jpeg
+author: nonken
 ---
 
 # Launching on Product Hunt

@@ -2,7 +2,8 @@
 layout: post.njk
 title: Building a website on Notion
 description: Learn how to build SaaS products from scratch.
-background: posts/zandvoort-grey.jpeg
+cover: posts/zandvoort-grey.jpeg
+author: nonken
 ---
 
 # Building a website on Notion

@@ -3,6 +3,7 @@ import readingTime from 'reading-time';
 import {join, basename, dirname} from 'path';
 import remark from 'remark';
 import html from 'remark-html';
+import blogConfig from '../../../config.json';
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString(undefined, { 
@@ -29,7 +30,7 @@ async function posts(generator) {
       cover: props.data.cover,
       date: formatDate(props.data.date),
       readingTime: readingTime(props.content).text,
-      // author: blogConfig.authors[props.data.author],
+      author: blogConfig.authors[props.data.author],
       link: `/${join(dirname(file), renameFromMdToHtml(file))}`,
       excerpt: remark()
         .use(asExcerpt, { omission: "...", pruneLength: 240 })

@@ -2,7 +2,8 @@
 layout: post.njk
 title: Building Relationships
 description: Learn how to build SaaS products from scratch.
-background: posts/zandvoort-sunset.jpeg
+cover: posts/zandvoort-sunset.jpeg
+author: nonken
 ---
 
 # Building Relationships

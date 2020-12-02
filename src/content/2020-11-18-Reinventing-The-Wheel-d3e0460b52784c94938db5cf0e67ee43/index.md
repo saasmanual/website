@@ -2,7 +2,8 @@
 layout: post.njk
 title: Reinventing The Wheel
 description: Learn how to build SaaS products from scratch.
-background: posts/twiske-fields.jpeg
+cover: posts/twiske-fields.jpeg
+author: nonken
 ---
 
 # Reinventing The Wheel
