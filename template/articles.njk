@@ -10,48 +10,48 @@
     <div class="max-w-prose prose prose-pink prose-lg text-gray-700 mx-auto mt-12 pb-24 px-4 md:px-0">
       {% for item in posts %}
       <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-          <div class="flex-shrink-0">
-            <img class="h-48 w-full object-cover" src="{{item.cover}}" alt="">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="{{item.cover}}" alt="">
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <a href="{{ item.link }}" class="block">
+              <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                {{item.title}}
+              </h3>
+              <p class="mt-3 text-base leading-6 text-gray-500">
+                {{item.excerpt | safe}}
+              </p>
+            </a>
           </div>
-          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-            <div class="flex-1">
-              <a href="{{ item.link }}" class="block">
-                <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                  {{item.title}}
-                </h3>
-                <p class="mt-3 text-base leading-6 text-gray-500">
-                  {{item.excerpt | safe}}
-                </p>
+          <div class="mt-6 flex items-center">
+            <div class="flex-shrink-0">
+              <a href="#">
+                <img class="h-10 w-10 rounded-full" src="{{item.author.avatar}}" alt="">
               </a>
             </div>
-            <div class="mt-6 flex items-center">
-              <div class="flex-shrink-0">
-                <a href="#">
-                  <img class="h-10 w-10 rounded-full" src="{{item.author.avatar}}" alt="">
+            <div class="ml-3">
+              <p class="text-sm leading-5 font-medium text-gray-900">
+                <a href="#" class="hover:underline">
+                  {{item.author.fullName}}
                 </a>
-              </div>
-              <div class="ml-3">
-                <p class="text-sm leading-5 font-medium text-gray-900">
-                  <a href="#" class="hover:underline">
-                    {{item.author.fullName}}
-                  </a>
-                </p>
-                <div class="flex text-sm leading-5 text-gray-500">
-                  <time datetime="2020-03-16">
-                    {{item.date}}
-                  </time>
-                  <span class="mx-1">
-                    &middot;
-                  </span>
-                  <span>
-                    {{item.readingTime}}
-                  </span>
-                </div>
+              </p>
+              <div class="flex text-sm leading-5 text-gray-500">
+                <time datetime="2020-03-16">
+                  {{item.date}}
+                </time>
+                <span class="mx-1">
+                  &middot;
+                </span>
+                <span>
+                  {{item.readingTime}}
+                </span>
               </div>
             </div>
           </div>
         </div>
-    {% endfor %}
+      </div>
+      {% endfor %}
     </div>
   </body>
 </html>
