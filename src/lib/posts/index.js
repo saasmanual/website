@@ -40,7 +40,7 @@ async function posts(generator) {
   }
 
   posts = posts.sort((a, b) => {
-    return b.date - a.date;
+    return new Date(b.date) - new Date(a.date);
   })
 
   for (const file in generator.ctx) {

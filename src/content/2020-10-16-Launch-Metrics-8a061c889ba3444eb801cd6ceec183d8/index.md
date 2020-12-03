@@ -5,7 +5,7 @@ description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-bird.jpeg
 date: 2020-10-16 17:15:00
 author: nonken
-excerpt: Wow, it's been a super cool day yesterday 🙏🏻. I announced [SaaS Manual on Product Hunt](https://www.producthunt.com/posts/saas-manual) without a ton of expectations and the response has been amazing. Before diving into the metrics though, have a look at the picture above. I took this yesterday evening at the sea in The Netherlands, just too good 🌊☀️. And if you haven't joined the journey yet, here you go:
+excerpt: Wow, it's been a super cool day yesterday 🙏🏻. I announced [SaaS Manual on Product Hunt](https://www.producthunt.com/posts/saas-manual) without a ton of expectations and the response has been amazing. Before diving into the metrics though, have a look at the picture above. I took this yesterday evening at the sea in The Netherlands, just too good 🌊☀️. And if you haven't joined the journey yet, here you go
 ---
 
 Wow, it's been a super cool day yesterday 🙏🏻. I announced [SaaS Manual on Product Hunt](https://www.producthunt.com/posts/saas-manual) without a ton of expectations and the response has been amazing. 
