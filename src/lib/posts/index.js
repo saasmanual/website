@@ -35,7 +35,7 @@ async function posts(generator) {
       excerpt: remark()
         .use(asExcerpt, { omission: "...", pruneLength: 240 })
         .use(html)
-        .processSync(props.content)
+        .processSync(props.data.excerpt || props.content)
     });
   }
 

@@ -3,8 +3,9 @@ layout: post.njk
 title: Introduction
 description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-sun.jpeg
-author: nonken
 date: 2020-10-22 17:15:00
+author: nonken
+excerpt: Wow! Here we are, I announced [SaaS Manual](https://saasmanual.com) a week ago (October 15th, 2020) and by now 655 people have signed up to join this adventure. This is my first post to you and it is a bit of a read but I ask you to stay with me as it provides context on how this all started.
 ---
 
 If you haven't signed up for this course yet, you can do so below:

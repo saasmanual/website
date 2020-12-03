@@ -3,8 +3,9 @@ layout: post.njk
 title: Reinventing The Wheel
 description: Learn how to build SaaS products from scratch.
 cover: posts/twiske-fields.jpeg
-author: nonken
 date: 2020-11-18 17:15:00
+author: nonken
+excerpt: Welcome to another episode of SaaS Manual 🎉 The past weeks have been wonderful, it is really awesome to see how many folks are curious about building SaaS products. In this post, I want to dive into the topic of "reinventing the wheel" and how I am creating a simple site generator for the new SaaS Manual landing page. Before that, let me introduce a new section of this weekly post
 ---
 
 Welcome to another episode of SaaS Manual 🎉 The past weeks have been wonderful, it is really awesome to see how many folks are curious about building SaaS products. In this post, I want to dive into the topic of "reinventing the wheel" and how I am creating a simple site generator for the new SaaS Manual landing page. Before that, let me introduce a new section of this weekly post: 
