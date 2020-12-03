@@ -4,6 +4,7 @@ title: Building Relationships
 description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-sunset.jpeg
 author: nonken
+date: 2020-10-27 17:15:00
 ---
 
 # Building Relationships

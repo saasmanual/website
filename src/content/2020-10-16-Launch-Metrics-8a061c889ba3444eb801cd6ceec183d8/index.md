@@ -4,6 +4,7 @@ title: Launch Metrics
 description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-bird.jpeg
 author: nonken
+date: 2020-10-16 17:15:00
 ---
 
 # Launch Metrics

@@ -4,6 +4,7 @@ title: Introduction
 description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-sun.jpeg
 author: nonken
+date: 2020-10-22 17:15:00
 ---
 
 # Introduction

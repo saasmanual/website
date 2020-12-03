@@ -4,6 +4,7 @@ title: Launching on Product Hunt
 description: Learn how to build SaaS products from scratch.
 cover: posts/erp-sunset.jpeg
 author: nonken
+date: 2020-11-10 17:15:00
 ---
 
 # Launching on Product Hunt

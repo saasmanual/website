@@ -4,6 +4,7 @@ title: Reinventing The Wheel
 description: Learn how to build SaaS products from scratch.
 cover: posts/twiske-fields.jpeg
 author: nonken
+date: 2020-11-18 17:15:00
 ---
 
 # Reinventing The Wheel
