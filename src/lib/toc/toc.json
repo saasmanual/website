@@ -1,54 +1,167 @@
 [{
-  "title": "Development"
+  "title": "Development",
+  "topics": [{
+    "title": "Local development environment"
+  }, {
+    "title": "Local vs. Cloud development environment"
+  }, {
+    "title": "Development in AWS accounts"
+  }, {
+    "title": "Development tools (Git, Docker, etc.)"
+  }]
 }, {
-  "title": "Testing"
+  "title": "Testing",
+  "topics": [{
+    "title": "Fundamentals of Testing (small tests, easy to maintain, focused, fast)"
+  }, {
+    "title": "Pros/cons of metrics (coverage)"
+  }, {
+    "title": "Importance of deterministic/non-flaky tests"
+  }, {
+    "title": "Picking the correct abstraction (unit/integration/canary)"
+  }, {
+    "title": "Unit testing"
+  }, {
+    "title": "Integration testing"
+  }, {
+    "title": "Browser testing"
+  }, {
+    "title": "Mobile testing"
+  }, {
+    "title": "Code Coverage"
+  }, {
+    "title": "Test automation"
+  }, {
+    "title": "What are canary tests"
+  }]
 }, {
-  "title": "Infrastructure"
+  "title": "Infrastructure",
+  "topics": [{
+    "title": "Provisioning"
+  }, {
+    "title": "Maintenance (e.g. host patching, benefits of serverless)"
+  }, {
+    "title": "Infrastructure as Code (CDK)"
+  }, {
+    "title": "CI/CD for infrastructure"
+  }, {
+    "title": "AWS Accounts / Organisations / SSO (service separation)"
+  }, {
+    "title": "Cost management"
+  }]
 }, {
-  "title": "Deployment"
+  "title": "Deployment",
+  "topics": [{
+    "title": "CI/CD"
+  }, {
+    "title": "Pipelines"
+  }, {
+    "title": "Stages"
+  }, {
+    "title": "Build processes/systems"
+  }, {
+    "title": "Approval steps"
+  }, {
+    "title": "Rollbacks (automatic)"
+  }, {
+    "title": "Testing in production"
+  }]
 }, {
-  "title": "Operations"
+  "title": "Operations",
+  "topics": [{
+    "title": "Operational dashboards"
+  }, {
+    "title": "Other resources to monitor (e.g. Twitter, AWS Status)"
+  }, {
+    "title": "Monitoring"
+  }, {
+    "title": "Alarming"
+  }, {
+    "title": "Canaries"
+  }, {
+    "title": "Paging"
+  }, {
+    "title": "Automatic Rollbacks"
+  }, {
+    "title": "Run-books"
+  }, {
+    "title": "Load testing"
+  }, {
+    "title": "Error logging (+gotchas e.g. post body in logs)"
+  }, {
+    "title": "Game Days"
+  }]
 }, {
-  "title": "Serverless"
+  "title": "Serverless",
+  "topics": [{
+    "title": "Lambda"
+  }, {
+    "title": "API Gateway"
+  }, {
+    "title": "DynamoDB"
+  }, {
+    "title": "S3"
+  }, {
+    "title": "SES"
+  }, {
+    "title": "CloudFront"
+  }]
 }, {
-  "title": "Backend"
+  "title": "Backend",
+  "topics": []
 }, {
-  "title": "Frontend / Clients"
+  "title": "Frontend / Clients",
+  "topics": []
 }, {
-  "title": "CDN / Static Assets"
+  "title": "CDN / Static Assets",
+  "topics": []
 }, {
-  "title": "Security"
+  "title": "Security",
+  "topics": []
 }, {
-  "title": "Analytics"
+  "title": "Analytics",
+  "topics": []
 }, {
-  "title": "Performance"
+  "title": "Performance",
+  "topics": []
 }, {
-  "title": "Networking"
+  "title": "Networking",
+  "topics": []
 }, {
-  "title": "Licensing"
+  "title": "Licensing",
+  "topics": []
 }, {
-  "title": "Compliance"
+  "title": "Compliance",
+  "topics": []
 }, {
-  "title": "Customer Support"
+  "title": "Customer Support",
+  "topics": []
 }, {
   "title": "API",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }, {
   "title": "Account Management",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }, {
   "title": "Billing",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }, {
   "title": "Blog",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }, {
   "title": "Documentation",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }, {
   "title": "Teams / Orgs",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }, {
   "title": "Landing Page",
-  "tags": ["feature"]
+  "tags": ["feature"],
+  "topics": []
 }]
