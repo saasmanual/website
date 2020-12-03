@@ -7,8 +7,6 @@ author: nonken
 date: 2020-11-10 17:15:00
 ---
 
-# Launching on Product Hunt
-
 Hope you all had a good start to the week! And if you haven't joined the SaaS Manual live community, feel free to join here: [https://discord.gg/gGTD6eX](https://discord.gg/gGTD6eX) - it is so cool to see how many wonderful people joined so far. 
 
 If you haven't signed up for SaaS Manual yet, you can do so below:

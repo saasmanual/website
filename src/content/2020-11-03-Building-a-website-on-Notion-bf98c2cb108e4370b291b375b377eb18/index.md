@@ -7,8 +7,6 @@ author: nonken
 date: 2020-11-03 17:15:00
 ---
 
-# Building a website on Notion
-
 Before I will dive into the topic of this week, I want to announce the [SaaS Manual Discord channel](https://discord.gg/gGTD6eX). The purpose of this channel is to create a space for us to exchange ideas, questions, feedback, or really anything related to building SaaS projects. If you are curious about it please [feel welcome to join here](https://discord.gg/gGTD6eX).
 
 I also want to thank a few folks: Reshen Amin and Justin Dray for reviewing the initial content for SaaS Manual, [Luca Cipriani](https://twitter.com/mastrolinux) who started contributing to the SaaS Manual list of topics, reviewed a bunch of content, and started writing, and everybody who reached out through email, on the Discord channel or other channels. It is so cool that we are starting to create a small, friendly, and welcoming community of folks who love to build things through code.

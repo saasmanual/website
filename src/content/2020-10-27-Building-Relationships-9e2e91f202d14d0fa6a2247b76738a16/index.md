@@ -7,8 +7,6 @@ author: nonken
 date: 2020-10-27 17:15:00
 ---
 
-# Building Relationships
-
 If you haven't signed up for this course yet, you can do so below:
 
 :iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}

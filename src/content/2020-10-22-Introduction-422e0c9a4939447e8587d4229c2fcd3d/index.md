@@ -7,8 +7,6 @@ author: nonken
 date: 2020-10-22 17:15:00
 ---
 
-# Introduction
-
 If you haven't signed up for this course yet, you can do so below:
 
 :iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}

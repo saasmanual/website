@@ -7,8 +7,6 @@ author: nonken
 date: 2020-11-18 17:15:00
 ---
 
-# Reinventing The Wheel
-
 Welcome to another episode of SaaS Manual 🎉 The past weeks have been wonderful, it is really awesome to see how many folks are curious about building SaaS products. In this post, I want to dive into the topic of "reinventing the wheel" and how I am creating a simple site generator for the new SaaS Manual landing page. Before that, let me introduce a new section of this weekly post: 
 
 ## What's New
