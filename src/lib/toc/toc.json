@@ -108,60 +108,188 @@
   }]
 }, {
   "title": "Backend",
-  "topics": []
+  "topics": [{
+    "title": "Dynamic rendering"
+  }, {
+    "title": "Static rendering"
+  }, {
+    "title": "Session handling"
+  }, {
+    "title": "Secret management"
+  }]
 }, {
   "title": "Frontend / Clients",
-  "topics": []
+  "topics": [{
+    "title": "JavaScript"
+  }, {
+    "title": "CSS"
+  }, {
+    "title": "Tailwind CSS"
+  }, {
+    "title": "Images"
+  }, {
+    "title": "Responsive layout"
+  }, {
+    "title": "Module systems"
+  }, {
+    "title": "Libraries"
+  }, {
+    "title": "Lighthouse / Page speed"
+  }]
 }, {
   "title": "CDN / Static Assets",
-  "topics": []
+  "topics": [{
+    "title": "CloudFront"
+  }, {
+    "title": "Fingerprinting"
+  }, {
+    "title": "Cache invalidation"
+  }, {
+    "title": "Request logging with request IDs"
+  }]
 }, {
   "title": "Security",
-  "topics": []
+  "topics": [{
+    "title": "Handling Access Tokens"
+  }, {
+    "title": "CSP"
+  }, {
+    "title": "IAM"
+  }, {
+    "title": "Production access"
+  }, {
+    "title": "Network security"
+  }, {
+    "title": "Personal Identifiable Information (PII)"
+  }, {
+    "title": "Encryption at rest"
+  }, {
+    "title": "Record encryption"
+  }, {
+    "title": "AWS Accounts as security boundary"
+  }]
 }, {
   "title": "Analytics",
-  "topics": []
+  "topics": [{
+    "title": "Privacy first"
+  }, {
+    "title": "Service metrics"
+  }, {
+    "title": "User interaction metrics"
+  }]
 }, {
   "title": "Performance",
-  "topics": []
+  "topics": [{
+    "title": "Page speed"
+  }, {
+    "title": "Serverless performance"
+  }, {
+    "title": "Caching"
+  }, {
+    "title": "CloudFront"
+  }]
 }, {
   "title": "Networking",
-  "topics": []
+  "topics": [{
+    "title": "VPCs"
+  }, {
+    "title": "Regions"
+  }, {
+    "title": "Multi-AZ / Regional availability"
+  }]
 }, {
   "title": "Licensing",
-  "topics": []
+  "topics": [{
+    "title": "Licensing basics"
+  }]
 }, {
   "title": "Compliance",
-  "topics": []
+  "topics": [{
+    "title": "GDPR"
+  }, {
+    "title": "PCI"
+  }]
 }, {
   "title": "Customer Support",
-  "topics": []
+  "topics": [{
+    "title": "Tools for customer support (non-invasive)"
+  }, {
+    "title": "Feature Requests by customers"
+  }]
 }, {
   "title": "API",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "Rate Limiting"
+  }, {
+    "title": "Authentication"
+  }, {
+    "title": "Authorization"
+  }, {
+    "title": "API Docs"
+  }, {
+    "title": "Public vs Private API"
+  }]
 }, {
   "title": "Account Management",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "Account creation"
+  }, {
+    "title": "Verification flows"
+  }, {
+    "title": "Password flows"
+  }, {
+    "title": "Newsletter"
+  }, {
+    "title": "Account deletion"
+  }, {
+    "title": "Service Emails"
+  }]
 }, {
   "title": "Billing",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "How do you determine the price for a product?"
+  }, {
+    "title": "Stripe"
+  }, {
+    "title": "Credit Card Management"
+  }, {
+    "title": "Dunning"
+  }, {
+    "title": "VAT"
+  }]
 }, {
   "title": "Blog",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "Building a site generator"
+  }]
 }, {
   "title": "Documentation",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "Building a site generator"
+  }]
 }, {
   "title": "Teams / Orgs",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "Billing"
+  }, {
+    "title": "User identity"
+  }, {
+    "title": "Invitation flows"
+  }]
 }, {
   "title": "Landing Page",
   "tags": ["feature"],
-  "topics": []
+  "topics": [{
+    "title": "SEO"
+  }, {
+    "title": "Page Performance"
+  }, {
+    "title": "Page layout"
+  }]
 }]
