@@ -1,5 +1,5 @@
 ---
 layout: articles.njk
-title: Reinventing The Wheel
+title: SaaS Manual Articles
 description: Learn how to build SaaS products from scratch.
 ---
