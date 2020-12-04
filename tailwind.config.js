@@ -5,7 +5,8 @@ module.exports = {
     require('@tailwindcss/typography')
   ],
   purge: [
-    './template/**/*.njk'
+    './template/**/*.njk',
+    './lib/**/*.js'
   ],
   theme: {
     extend: {
