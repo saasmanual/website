@@ -1,15 +1,15 @@
 import excerptAst from 'mdast-excerpt';
 import readingTime from 'reading-time';
-import {join, basename, dirname} from 'path';
+import { dirname } from 'path';
 import remark from 'remark';
 import html from 'remark-html';
 import blogConfig from '../../../config.json';
 
 function formatDate(date) {
-  return new Date(date).toLocaleDateString(undefined, { 
-    year: "numeric", 
-    month: "long", 
-    day: "numeric" 
+  return new Date(date).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
   });
 }
 
@@ -18,9 +18,9 @@ async function posts(generator) {
   const asExcerpt = options => node => excerptAst(node, options || {});
 
   for (const file in generator.ctx) {
-    const props = generator.ctx[file]; 
+    const props = generator.ctx[file];
     if (props.data.layout !== 'post.njk') continue;
-    
+
     posts.push({
       title: props.data.title,
       cover: props.data.cover,

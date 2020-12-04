@@ -1,18 +1,14 @@
 <html>
 <head>
   {% include './include/head.njk' %}
-
   <meta property="og:site_name" content="SaaS Manual">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ excerpt }}">
-  {% if cover %}
-  <meta property="og:image" content="https://saasmanual.com/assets/img/{{ cover }}">
-  {% endif %}
-  {# <meta property="og:url" content="https://saasmanual.com/{{ post }}"> #}
-  {# <meta name="twitter:card" content="summary_large_image"> #}
-  {# <meta name="twitter:image:alt" content="Alt text for image"> #}
-  {# <meta property="fb:app_id" content="your_app_id" /> #}
-  {# <meta name="twitter:site" content="@website-username"> #}
+  {% if cover %}<meta property="og:image" content="{{ config.url }}/assets/img/{{ cover }}">{% endif %}
+  <meta property="og:url" content="{{ config.url }}{{ link }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="{{ title }}">
+  <meta name="twitter:site" content="@saasmanual">
 </head>
 <body>
   {% include './include/navigation.njk' %}

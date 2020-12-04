@@ -7,10 +7,14 @@ import iframe from './src/lib/iframe';
 import floatingImage from './src/lib/floating-image';
 import footnotes from 'remark-footnotes';
 import posts from './src/lib/posts';
+import config from './src/lib/config';
+import meta from './src/lib/meta';
 
 (new Generator)
   .templates('./template')
   .use(posts)
+  .use(config)
+  .use(meta)
   .useRemarkPlugin(directive)
   .useRemarkPlugin(toc)
   .useRemarkPlugin(alert)
