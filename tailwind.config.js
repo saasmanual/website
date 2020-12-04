@@ -6,8 +6,8 @@ module.exports = {
   ],
   purge: [
     './template/**/*.njk',
-    './lib/**/*.js',
-    './lib/**/*.njk'
+    './src/lib/**/*.js',
+    './src/lib/**/*.njk'
   ],
   theme: {
     extend: {
