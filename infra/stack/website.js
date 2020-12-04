@@ -2,7 +2,7 @@ const { join } = require('path');
 const { Stack, Duration } = require('@aws-cdk/core');
 const { PublicHostedZone, RecordTarget, ARecord } = require('@aws-cdk/aws-route53');
 const { CloudFrontTarget } = require('@aws-cdk/aws-route53-targets');
-const { PriceClass, CloudFrontWebDistribution } = require('@aws-cdk/aws-cloudfront');
+const { PriceClass, CloudFrontWebDistribution, OriginProtocolPolicy } = require('@aws-cdk/aws-cloudfront');
 const { Bucket, BucketAccessControl } = require('@aws-cdk/aws-s3');
 const { BucketDeployment, Source, CacheControl } = require('@aws-cdk/aws-s3-deployment');
 
@@ -37,8 +37,9 @@ class WebsiteStack extends Stack {
 
     this.productionDistribution = new CloudFrontWebDistribution(this, `${id}-website-production-distribution`, {
       originConfigs: [{
-        s3OriginSource: {
-          s3BucketSource: websiteAssets
+        customOriginSource: {
+          originProtocolPolicy: OriginProtocolPolicy.HTTP_ONLY,
+          domainName: websiteAssets.bucketWebsiteDomainName
         },
         behaviors: [{
           isDefaultBehavior: true,
