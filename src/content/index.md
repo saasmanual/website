@@ -120,16 +120,9 @@ There is nothing more to say, you made it and that is amazing 🙈. If you love 
 
 :iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
 
-## Updates
+## Updates / Articles
 
-SaaS Manual was announced on October 15th, 2020. Here are the updates since then.
-
-[2020-10-16 / Launch Metrics](2020-10-16-Launch-Metrics-8a061c889ba3444eb801cd6ceec183d8)
-[2020-10-22 / Introduction](2020-10-22-Introduction-422e0c9a4939447e8587d4229c2fcd3d)
-[2020-10-27 / Building Relationships](2020-10-27-Building-Relationships-9e2e91f202d14d0fa6a2247b76738a16)
-[2020-11-03 / Building a website on Notion](2020-11-03-Building-a-website-on-Notion-bf98c2cb108e4370b291b375b377eb18)
-[2020-11-10 / Launching on Product Hunt](2020-11-10-Launching-on-Product-Hunt-4fdb7ef738be4e7f8928731002350177)
-[2020-11-18 / Reinventing The Wheel](2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43)
+You can find all previously released [articles here](/articles).
 &nbsp;
 &nbsp;
 &nbsp;
