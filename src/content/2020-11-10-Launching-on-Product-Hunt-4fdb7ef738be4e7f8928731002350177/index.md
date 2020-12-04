@@ -22,7 +22,7 @@ Over the years, I have been part of several product launches. It always has been
 
 There is also another side to launching. Every other launch I have been part of had pretty much the exact same pattern (with different absolute ranges). So, let me share the launch metrics of the SaaS Manual website to give you an idea. 
 
-![2020-11-10%20Launching%20on%20Product%20Hunt%204fdb7ef738be4e7f8928731002350177/Screenshot_2020-11-09_at_09.47.22.png](2020-11-10%20Launching%20on%20Product%20Hunt%204fdb7ef738be4e7f8928731002350177/Screenshot_2020-11-09_at_09.47.22.png)
+![/assets/img/posts/launching-on-product-hunt/plausible.png](/assets/img/posts/launching-on-product-hunt/plausible.png)
 
 You'll see, there was a clear spike during the launch and then it dropped. When you work extremely hard, day and night, for weeks to launch a new product, you will very likely get this type of graph. You might be hit by a wave of endorphins **"woohoo, so many people love my product"** before you get struck by depression as your metrics are in freefall **"oh nooo, why are there no new customers anymore?"**. This is normal, you should expect it and it is good practice to be mentally ready for this. 
 
@@ -83,7 +83,7 @@ You also need to create an icon and some background images. I am not a graphic d
 
 I made all assets available on GitHub. [Head there if you are curious](https://github.com/saasmanual/assets).
 
-![2020-11-10%20Launching%20on%20Product%20Hunt%204fdb7ef738be4e7f8928731002350177/Untitled.png](2020-11-10%20Launching%20on%20Product%20Hunt%204fdb7ef738be4e7f8928731002350177/Untitled.png)
+![/assets/img/posts/launching-on-product-hunt/cover.png](/assets/img/posts/launching-on-product-hunt/cover.png)
 
 After those preparations, I scheduled the launch and just waited for it to happen.
 

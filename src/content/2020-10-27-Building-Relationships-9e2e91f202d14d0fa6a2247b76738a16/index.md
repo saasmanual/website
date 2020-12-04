@@ -38,13 +38,13 @@ Don't drop the ball on follow up conversations.
 
 After sending the first email, I got several wonderful responses. Let me share one from [Ben Brook](https://twitter.com/backwardsneb):
 
-![2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/Screenshot_2020-10-23_at_11_16_03.png](2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/Screenshot_2020-10-23_at_11_16_03.png)
+![/assets/img/posts/building-relationships/email.png](/assets/img/posts/building-relationships/email.png)
 
 This is how I usually respond to emails. Just make sure you follow up in a timely way and stay in contact. 
 
 Another example was from an interaction with Atif Khan who is working on a startup in the medical space. Atif reached out and a couple of days later we had a really awesome call. I hope that was able to help and I definitely got a few great ideas from Atif, win-win.
 
-![2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/Screenshot_2020-10-23_at_11_36_46.png](2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/Screenshot_2020-10-23_at_11_36_46.png)
+![/assets/img/posts/building-relationships/linkedin.png](/assets/img/posts/building-relationships/linkedin.png)
 
 ## Examples of what not to do
 
@@ -52,7 +52,7 @@ A few startups reached out to me as well, sharing their products. Maybe their th
 
 I was really happy about those messages, though some didn't come through on their promise. Let me share one example of how I would not do it. I edited everything out so it is not clear who this actually was. But it still shows that this was a lost opportunity for a new customer/supporter/advocate (me).
 
-![2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/Screenshot_2020-10-23_at_11_22_35-2-2.png](2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/Screenshot_2020-10-23_at_11_22_35-2-2.png)
+![/assets/img/posts/building-relationships/twitter.png](/assets/img/posts/building-relationships/twitter.png)
 
 More than a week has passed and I haven't gotten a response. Why is this? It lowers the excitement I initially had. So now I am simply less inclined to use this product, even though it looked amazing. 
 
@@ -64,7 +64,7 @@ The big question is: will this approach work for SaaS Manual? I don't know! Ther
 
 ## Keeping track
 
-For me to stay on top of the people who are reaching out, I built a simple "CRM" (Customer relationship management) in Notion. I sometimes review this and see if there is anyone I should reach out to again. You can check out an empty version here: [SaaS Manual CRM](2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/SaaS%20Manual%20CRM%204d4548e3c4424a269f072c10faa20629.md) and make a copy if you feel like it could be useful for you. 
+For me to stay on top of the people who are reaching out, I built a simple "CRM" (Customer relationship management) in Notion. I sometimes review this and see if there is anyone I should reach out to again. You can check out an empty version here: [SaaS Manual CRM](https://www.notion.so/SaaS-Manual-CRM-4d4548e3c4424a269f072c10faa20629) and make a copy if you feel like it could be useful for you. 
 
 I want to share one thought on tools. Tools are there to help you achieve your goals. They don't exist to keep you busy. So I built the CRM to help me stay in touch with people **right now**. There likely will come a point when I will no longer use this and have found a better way. Don't get lost in tools and always feel free to drop them as soon as they are no longer useful. There is no use in sticking to a tool because you invested time into it.
 
@@ -86,6 +86,6 @@ The coming update will cover how I built the SaaS Manual landing page. I already
 
 ---
 
-Sub pages:
+External links:
 
-[SaaS Manual CRM](2020-10-27%20Building%20Relationships%209e2e91f202d14d0fa6a2247b76738a16/SaaS%20Manual%20CRM%204d4548e3c4424a269f072c10faa20629.md)
+[SaaS Manual CRM](https://www.notion.so/SaaS-Manual-CRM-4d4548e3c4424a269f072c10faa20629)

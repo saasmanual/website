@@ -31,7 +31,7 @@ Today I will share how the idea for SaaS Manual was born. I won't yet dive into 
 
 ## A long journey
 
-![2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d/Journey_.png](2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d/Journey_.png)
+![/assets/img/posts/introduction/journey.png](/assets/img/posts/introduction/journey.png)
 
 **August 2019:** I left AWS after 5 years of experiencing the rollercoaster of being part of a startup called [Cloud9 IDE](https://aws.amazon.com/cloud9/). We searched and found product-market fit, we scaled up, we hired, we gained many active users, we went through an acquisition by AWS, and then learned how to build and operate products at AWS. It was a very intense, yet fulfilling 5 years. And after those 5 years, I decided to take a bit of time off and be okay with the fact that I didn't know what was coming next. 
 
