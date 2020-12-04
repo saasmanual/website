@@ -130,7 +130,6 @@ SaaS Manual was announced on October 15th, 2020. Here are the updates since then
 [2020-11-03 / Building a website on Notion](2020-11-03-Building-a-website-on-Notion-bf98c2cb108e4370b291b375b377eb18)
 [2020-11-10 / Launching on Product Hunt](2020-11-10-Launching-on-Product-Hunt-4fdb7ef738be4e7f8928731002350177)
 [2020-11-18 / Reinventing The Wheel](2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43)
-[SaaS Manual Posts](SaaS-Manual-Posts-a90c47276f6f4fc5a7c74e8945df128c)
 &nbsp;
 &nbsp;
 &nbsp;
