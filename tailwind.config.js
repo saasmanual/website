@@ -4,6 +4,9 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography')
   ],
+  purge: [
+    './template/**/*.njk'
+  ],
   theme: {
     extend: {
       colors: {
