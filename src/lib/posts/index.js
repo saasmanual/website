@@ -13,10 +13,6 @@ function formatDate(date) {
   });
 }
 
-function renameFromMdToHtml(file) {
-  return `${basename(file, '.md')}.html`;
-}
-
 async function posts(generator) {
   let posts = [];
   const asExcerpt = options => node => excerptAst(node, options || {});
@@ -31,7 +27,7 @@ async function posts(generator) {
       date: formatDate(props.data.date),
       readingTime: readingTime(props.content).text,
       author: blogConfig.authors[props.data.author],
-      link: `/${join(dirname(file), renameFromMdToHtml(file))}`,
+      link: `/${dirname(file)}`,
       excerpt: remark()
         .use(asExcerpt, { omission: "...", pruneLength: 240 })
         .use(html)
