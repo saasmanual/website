@@ -5,6 +5,46 @@
 <body>
   <!-- This example requires Tailwind CSS v2.0+ -->
   {% include './include/navigation.njk' %}
+  <script>
+    window.headerState;
+    function initHeader() {
+      return {
+        email: '',
+
+        requestInvite: async function() {
+          const response = await fetch('https://static.mailerlite.com/webforms/submit/b4c8x1', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            credentials: 'same-origin',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            redirect: 'follow',
+            referrerPolicy: 'no-referrer',
+            body: JSON.stringify({
+              email: this.email,
+              fullName: this.fullName
+            })
+          });
+
+          if (response.ok) { //
+            this.done = true;
+          }
+        }
+      };
+    }
+
+    window.remoteModal = function() {
+      return {
+        email: '',
+        openModal() {
+          window.headerState.email = this.email;
+          window.headerState.openRequestAccess = true;
+        }
+      }
+    }
+  </script>
   <div class="relative bg-gray-50 overflow-hidden bg-hero-pattern bg-no-repeat bg-cover">
     <main class="my-16 mx-auto max-w-7xl px-4 sm:mt-24">
       <div class="text-center">
@@ -20,12 +60,14 @@
         </p>
         <div class="mt-5 max-w-xl mx-auto sm:flex sm:justify-center md:mt-8">
           <div class="mt-8 sm:max-w-xl sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-            <form action="#" method="post" class="mt-3 sm:flex">
+            <form class="mt-3 sm:flex" action="https://static.mailerlite.com/webforms/submit/b4c8x1" data-code="b4c8x1" method="post" target="_blank">
               <label for="email" class="sr-only">Email</label>
-              <input type="text" name="email" id="email" class="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="enter your email here">
+              <input type="text" id="email" data-inputmask="" name="fields[email]" class="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300" placeholder="enter your email here">
+              <input type="hidden" name="ml-submit" value="1">
               <button type="submit" class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 shadow-sm hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
                 I'd love to get the first lesson 💛
               </button>
+              <img src="https://track.mailerlite.com/webforms/o/2789603/b4c8x1?v1602842073" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
             </form>
           </div>
         </div>
