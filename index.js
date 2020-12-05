@@ -9,12 +9,13 @@ import footnotes from 'remark-footnotes';
 import posts from './src/lib/posts';
 import config from './src/lib/config';
 import meta from './src/lib/meta';
-
+import sitemap from './src/lib/sitemap';
 (new Generator)
   .templates('./template')
   .use(posts)
   .use(config)
   .use(meta)
+  .use(sitemap)
   .useRemarkPlugin(directive)
   .useRemarkPlugin(toc)
   .useRemarkPlugin(alert)
