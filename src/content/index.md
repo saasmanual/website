@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: landing.njk
 title: SaaS Manual
 description: Learn how to build SaaS products from scratch.
 ---
