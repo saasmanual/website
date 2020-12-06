@@ -1,5 +1,6 @@
 import { create } from 'xmlbuilder2';
-import { dirname } from 'path';
+import { dirname, join } from 'path';
+import { writeFileSync } from 'fs';
 import blogConfig from '../../../config.json';
 
 async function sitemap(generator) {
@@ -14,7 +15,9 @@ async function sitemap(generator) {
   }
 
   const xml = root.end({ prettyPrint: true });
-  
+  const out = join(this._destination, 'sitemap.xml');
+  writeFileSync(out, xml);
+
   return this;
 }
 
