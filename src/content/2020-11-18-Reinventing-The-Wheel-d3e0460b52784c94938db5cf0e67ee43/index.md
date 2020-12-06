@@ -14,7 +14,7 @@ Welcome to another episode of SaaS Manual 🎉 The past weeks have been wonderfu
 
 **Ideas:** You have been sharing really awesome ideas about what you would love me to dive into and I started losing track of this. That was not good 🙈. Say hi to the #ideas repository for SaaS Manual: [https://github.com/saasmanual/ideas/issues](https://github.com/saasmanual/ideas/issues) If you have any ideas or topics which you would love to learn about, you can simply open a new "issue", share your thoughts and I will get back to you there.
 
-**Previous Posts:** For folks who have joined later, you can [find all previous posts here](https://saasmanual.com/SaaS-Manual-Posts-a90c47276f6f4fc5a7c74e8945df128c). They almost read like a diary, as I am covering topics as I build SaaS Manual. So you can easily catch up there.
+**Previous Posts:** For folks who have joined later, you can [find all previous posts here](https://saasmanual.com/articles). They almost read like a diary, as I am covering topics as I build SaaS Manual. So you can easily catch up there.
 
 **Discord community:** This is not exactly new, but since there is such an awesome community happening, I am sharing it again: Join the SaaS Manual community here.
 
