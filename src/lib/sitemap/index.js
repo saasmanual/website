@@ -4,8 +4,8 @@ import { writeFileSync } from 'fs';
 import blogConfig from '../../../config.json';
 
 async function sitemap(generator) {
-  const root = create({ version: '1.0' });
-  const map = root.ele('sitemapindex', { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' })
+  const root = create({ version: '1.0', encoding: 'utf-8', standalone: 'yes' });
+  const map = root.ele('urlset', { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' })
 
   for (const file in generator.ctx) {
     const url = dirname(file) === '.' ? `${blogConfig.url}` : `${blogConfig.url}/${dirname(file)}`;
