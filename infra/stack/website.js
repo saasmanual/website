@@ -24,7 +24,8 @@ class WebsiteStack extends Stack {
       accessControl: BucketAccessControl.PUBLIC_READ,
       bucketName: `saas-manual-website-prod-static-assets`,
       publicReadAccess: true,
-      websiteIndexDocument: 'index.html'
+      websiteIndexDocument: 'index.html',
+      websiteErrorDocument: '404/index.html'
     });
 
     new BucketDeployment(this, 'DeployWebsite', {
