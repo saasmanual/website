@@ -16,7 +16,7 @@ Welcome to another episode of SaaS Manual 🎉 The past weeks have been wonderfu
 
 **Previous Posts:** For folks who have joined later, you can [find all previous posts here](https://saasmanual.com/articles). They almost read like a diary, as I am covering topics as I build SaaS Manual. So you can easily catch up there.
 
-**Discord community:** This is not exactly new, but since there is such an awesome community happening, I am sharing it again: Join the SaaS Manual community here.
+**Discord community:** This is not exactly new, but since there is such an awesome community happening, I am sharing it again: [Join the SaaS Manual community here](https://discord.gg/wHtewNG).
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
