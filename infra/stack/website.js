@@ -49,7 +49,7 @@ class WebsiteStack extends Stack {
       }],
       aliasConfiguration: {
         acmCertRef: certificateArn,
-        names: [hostName]
+        names: [hostName, `www.${hostName}`]
       },
       priceClass: PriceClass.PRICE_CLASS_100
     });
