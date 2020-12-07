@@ -80,4 +80,4 @@ The coming update will cover how I announced SaaS Manual on Product Hunt and oth
 
 [Follow me on Twitter](https://twitter.com/nonken) if you are curious about more regular updates on SaaS Manual. And as usual, please reach out to nikolai@saasmanual.com if you have any feedback, questions, or comments.
 
-[Initial TOC](2020-11-03%20Building%20a%20website%20on%20Notion%20bf98c2cb108e4370b291b375b377eb18/Initial%20TOC%20d2461f8c177643feb6447c69dd4b70d9.md)
+[Initial TOC](https://www.notion.so/Initial-TOC-d2461f8c177643feb6447c69dd4b70d9)
