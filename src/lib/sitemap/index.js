@@ -8,6 +8,8 @@ async function sitemap(generator) {
   const map = root.ele('urlset', { xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9' })
 
   for (const file in generator.ctx) {
+    if (generator.ctx[file].data.ignoreSitemap) continue;
+
     const url = dirname(file) === '.' ? `${blogConfig.url}` : `${blogConfig.url}/${dirname(file)}`;
     map
       .ele('url')
