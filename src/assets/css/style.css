@@ -63,3 +63,8 @@ ul.toc h3 {
   @apply p-0;
   @apply m-0;
 }
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+}
