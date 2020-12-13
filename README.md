@@ -12,4 +12,6 @@ Run `npm run dev` to launch a local preview server. You can access the site at h
 
 ## Infrastructure setup
 
-Before setting up the website, you need to bootstrap shared infrastructure like Route53. Simply follow the [README.md of the shared-infrastructure repository](https://github.com/saasmanual/shared-infrastructure/blob/main/README.md). After you have provisioned the shared infrastructure you can setup the infrastructure for the website by running `npm run cdk:deploy`. NOTE: Make sure you change the profile defined in the package.json to match your profile.
+Before setting up the website, you need to bootstrap shared infrastructure like Route53. Simply follow the [README.md of the shared-infrastructure repository](https://github.com/saasmanual/shared-infrastructure/blob/main/README.md). After you have provisioned the shared infrastructure you can setup the infrastructure for the website by running `npm run cdk:deploy`. 
+
+> NOTE: Make sure you change the profile defined in the package.json to match your profile.
