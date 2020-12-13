@@ -37,6 +37,8 @@ This is the perfect time to run you through the "journey" the code makes from be
 
 I am developing SaaS Manual on my laptop. This means that I can have a fast iteration cycle between making changes and verifying that those changes are working correctly. As we are increasingly moving into the cloud you can also setup your entire development environment in the cloud. If you are curious about that, I can recomend checking out some of the cloud environments, like [Cloud9](https://c9.io). For my requirements, my laptop works really well.
 
+![/assets/img/posts/moving-to-aws/local-dev.png](/assets/img/posts/moving-to-aws/local-dev.png)
+
 Usually, I setup one directory for all repositories related to one project. In my case the directory is `~/dev/saasmanual`. 
 
 ![/assets/img/posts/moving-to-aws/local-setup.png](/assets/img/posts/moving-to-aws/local-setup.png)
