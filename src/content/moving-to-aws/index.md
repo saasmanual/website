@@ -176,7 +176,7 @@ This was not all, hah, but instead of diving into each plugin, I recommend divin
 
 ## Conclusion
 
-I have now moved the SaaS Manual website over to AWS and built everything from scratch. And it is working well, really well! I can develop locally and preview my changes, I can push new content to production and infrastructure updates are encoded in code. I want to invite you to dive into the [website repository on GitHub](https://github.com/saasmanual/website) and have a look yourself. This is the next step in the journey of building a SaaS product completely from scratch.
+I have now moved the SaaS Manual website over to AWS and built everything from scratch. And it is working well, really well! I can develop locally and preview my changes, I can push new content to production, and infrastructure updates are encoded in code. I want to invite you to dive into the [website repository on GitHub](https://github.com/saasmanual/website) and have a look yourself. This is the next step in the journey of building a SaaS product completely from scratch.
 
 ## Next update
 In the next update, I will share some of the enhancements I will apply to the site over the coming days. I don't yet know what those will be, but there has been a lot of super interesting ideas and feedback in the [Discord community](https://discord.gg/wHtewNG), stay tuned 🎉.
