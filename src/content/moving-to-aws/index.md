@@ -13,7 +13,7 @@ The year is coming to an end, and wow, what a strange year. Time flew, yet the w
 
 ## What's New
 
-**Generator updates:** I added small updates to the site generator which we built [in the last post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43). You can now write draft posts without those being published to the website. This was a request by Luca Capriani.
+**Generator updates:** I added small updates to the site generator which we built [in the last post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43). You can now write draft posts without those being published to the website. This was a request by Luca Cipriani.
 
 **Discord community:** This is not exactly new, but since there is such an awesome community happening, I am sharing it again: [Join the SaaS Manual community here](https://discord.gg/wHtewNG).
 
@@ -27,15 +27,15 @@ I launched [SaaS Manual on Notion](/2020-11-03-Building-a-website-on-Notion-bf98
 
 ## Infrastructure
 
-There are many ways you can host a new website. You might decide to use [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/), you might host on [Wordpress](https://wordpress.com/) or [Ghost](https://ghost.org/). Instead of building on top of these platforms I will show you how to do this on AWS. This means that we will go a little bit lower level than these platforms. This because I would love to show you what happens under the hood for many of the SaaS products you are using. Let's dive into the infrastructure setup. 
+There are many ways you can host a new website. You might decide to use a cloud platform for serverleess deployment like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/), you might host on a CMS like [Wordpress](https://wordpress.com/) or [Ghost](https://ghost.org/). Instead of building on top of these platforms I will show you how to do this on AWS. This means that we will go a little bit lower level than these platforms. This because I would love to show you what happens under the hood for many of the SaaS products you are using. Let's dive into the infrastructure setup. 
 
-The current SaaS Manual website is still pretty simple, there is a landing page and there are a bunch of articles. We have an email list signup form, some metrics and that is pretty much all there is to it at this point. 
+The current [SaaS Manual website](https://saasmanual.com) is still pretty simple, there is a landing page and there are a bunch of articles. We have an email list signup form, some metrics and that is pretty much all there is to it at this point. 
 
 This is the perfect time to run you through the "journey" the code makes from being written to being visible to a visitor on SaaS Manual. 
 
 ## Local development
 
-I am developing SaaS Manual on my laptop. This means that I can have a fast iteration cycle between making changes and verifying that those changes are working correctly. As we are increasingly moving into the cloud you can also setup your entire development environment in the cloud. If you are curious about that, I can recomend checking out some of the cloud environments, like [Cloud9](https://c9.io). For my requirements, my laptop works really well.
+I am developing SaaS Manual on my laptop. This means that I can have a fast iteration cycle between making changes and verifying that those changes are working correctly. As we are increasingly moving into the cloud you can also setup your entire development environment in the cloud. If you are curious about that, I can recommend checking out some of the cloud environments, like [Cloud9](https://c9.io). For my requirements, my laptop works really well.
 
 ![/assets/img/posts/moving-to-aws/local-dev.png](/assets/img/posts/moving-to-aws/local-dev.png)
 
@@ -57,7 +57,7 @@ You should see similar terminal output as the one below:
 ![/assets/img/posts/moving-to-aws/local-terminal.png](/assets/img/posts/moving-to-aws/local-terminal.png)
 
 If that is the case, you can now preview the website by accessing [http://localhost:5001](http://localhost:5001) 🎉. 
-Now when we make changes, like writing a new post, I eventually commit the changes to Git and push them to GitHub. 
+Now when we make changes, like writing a new post, I eventually commit the changes to Git and push them to GitHub. Full and updated instructions can be found in the file README.md.
 
 ## Deploying to production
 
@@ -67,7 +67,7 @@ I kept the flow deliberately high level, because it is important to first unders
 
 ![/assets/img/posts/moving-to-aws/codepipeline.png](/assets/img/posts/moving-to-aws/codepipeline.png)
 
-A pipeline is basically an orchestration software which you can "program". You can say things like: First, I'd like you to check out this repository. When this succeeds, please run a few tests. You also can tell it that a human needs to approve something. Then after everything succeeded, the pipeline instructs a deployment mechanism to deploy your code. 
+A pipeline is basically an orchestration software which you can "program". You can say things like: First, I'd like you to check out this repository. When this succeeds, please run a few tests. You also can tell it that a human needs to approve something. Then after everything succeeded, the pipeline instructs a deployment mechanism to deploy your code. To simplify it, a pipeline is a step by step instruction set of actions on an input producing some output at the end of the process.
 
 You might wonder, that's cool, but how do I set this up myself? This is where the AWS **C**loud **D**evelopment **K**it (CDK) comes into play. The CDK allows you to define infrastructure as code (IaC). This is a important piece of the puzzle! In the past, you would log into the AWS console, and press a bunch of buttons, setting up the right tools... hopefully. It would be impossible to recreate the same environment without huge pain. When your service grew, you might have moved to CloudFormation to write complicated JSON or YAML files. So that you at least would be able to check your YAML files into a repo and apply source control. This still is quite painful if you ask me. CDK to the rescue. Now you can do cool stuff like this:
 
