@@ -12,7 +12,7 @@ The year is coming to an end, and wow, what a strange year. Time flew, yet the w
 
 ## What's New
 
-**Generator updates:** I added small updates to the site generator which we built [in the last post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43). You can now write draft posts without those being published to the website. This was a request by Luca Cipriani.
+**Generator updates:** I added small updates to the site generator which we built [in the last post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43). You can now write draft posts without those being published to the website. This was a request by [Luca Cipriani](https://twitter.com/mastrolinux).
 
 **Discord community:** This is not exactly new, but since there is such an awesome community happening, I am sharing it again: [Join the SaaS Manual community here](https://discord.gg/wHtewNG).
 
