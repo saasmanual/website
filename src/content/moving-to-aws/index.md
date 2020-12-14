@@ -140,9 +140,9 @@ This wraps up the infrastructure part of the new SaaS Manual website, lets have 
 ## UX / Layout
 
 Now that we had the infrastructure setup and that we could deploy a static site to AWS, it was time to do some styling and make the new site look good.
-As I described in [a previous post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43), I am using a very basic site generator to generate HTML pages based on Markdown content. So all I had to do is style the HTML templates. I am using a CSS toolkit called [TailwindCSS](https://tailwindcss.com). I love Tailwind, because it allows me to move fast, and it is fairly simple to learn. I also am using [TailwindUI](https://tailwindui.com). I still had a license for another project.
+As I described in [a previous post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43), I am using a very basic site generator to generate HTML pages based on Markdown content. So all I had to do is style the HTML templates. I am using a CSS toolkit called [Tailwind CSS](https://tailwindcss.com). I love Tailwind, because it allows me to move fast, and it is fairly simple to learn. I also am using [Tailwind UI](https://tailwindui.com). I still had a license for another project.
 
-I won't dive into the details on how to use Tailwind in this post, but let me highlight how I am creating the CSS assets as part of the pipeline:
+I won't dive into the details on how to use Tailwind in this post because the [Tailwind CSS docs](https://tailwindcss.com/docs) are amazing. Let me highlight instead how I am creating the CSS assets as part of the pipeline:
 
 In the `package.json` I have a `build:css` script which looks as follows:
 
