@@ -3,10 +3,9 @@ layout: post.njk
 title: Moving to AWS
 description: After a successful launch on Notion, it was time to move to AWS. Here is what I did.
 cover: posts/twiske-sunset.jpeg
-date: 2020-12-08 14:45:00
+date: 2020-12-15 14:45:00
 author: nonken
 excerpt: The year is coming to an end, and wow, what a strange year. Time flew, yet the world stood still in many ways. First of all, I hope you are well and that you managed to get through 2020 without too many bruises. In this week's post, I will share more context on how I migrated the SaaS Manual website to AWS. And here's the news.
-draft: true
 ---
 
 The year is coming to an end, and wow, what a strange year. Time flew, yet the world stood still in many ways. First of all, I hope you are well and that you managed to get through 2020 without too many bruises. In this week's post, I will share more context on how I migrated the SaaS Manual website to AWS. And here's the news: It is done 🎉 Before diving in though, let me share what's new:
@@ -177,9 +176,9 @@ This was not all, hah, but instead of diving into each plugin, I recommend divin
 
 ## Conclusion
 
-I have now moved the SaaS Manual website over to AWS and built everything from scratch. And it is working well, really well! I want to invite you to dive into the [website repository on GitHub](https://github.com/saasmanual/website) and have a look yourself. This is the next step in the journey of building a SaaS product completely from scratch.
+I have now moved the SaaS Manual website over to AWS and built everything from scratch. And it is working well, really well! I can develop locally and preview my changes, I can push new content to production and infrastructure updates are encoded in code. I want to invite you to dive into the [website repository on GitHub](https://github.com/saasmanual/website) and have a look yourself. This is the next step in the journey of building a SaaS product completely from scratch.
 
 ## Next update
 In the next update, I will share some of the enhancements I will apply to the site over the coming days. I don't yet know what those will be, but there has been a lot of super interesting ideas and feedback in the [Discord community](https://discord.gg/wHtewNG), stay tuned 🎉.
 
-Follow me on Twitter if you are curious about more regular updates on SaaS Manual. And as usual, please reach out to nikolai@saasmanual.com if you have any feedback, questions, or comments. I am especially curious about whether there are any topics you'd like me to cover regarding the initial launch of SaaS Manual.
+[Follow me on Twitter](https://twitter.com/nonken) if you are curious about more regular updates on SaaS Manual. And as usual, please reach out to nikolai@saasmanual.com if you have any feedback, questions, or comments. I am especially curious about whether there are any topics you'd like me to cover regarding the initial launch of SaaS Manual.
