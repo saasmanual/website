@@ -11,7 +11,7 @@ import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
 (new Generator)
-  .templates('./template')
+  .templates('./src/template')
   .use(posts)
   .use(config)
   .use(meta)
