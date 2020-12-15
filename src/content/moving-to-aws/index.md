@@ -56,7 +56,7 @@ You should see a similar terminal output as the one below:
 ![/assets/img/posts/moving-to-aws/local-terminal.png](/assets/img/posts/moving-to-aws/local-terminal.png)
 
 If that is the case, you can now preview the website by accessing [http://localhost:5001](http://localhost:5001) 🎉. 
-Now when we make changes, like writing a new post, I eventually commit the changes to Git and push them to GitHub. Full and updated instructions can be found in the file README.md.
+Now when we make changes, like writing a new post, I eventually commit the changes to Git and push them to GitHub.
 
 ## Deploying to production
 
@@ -68,9 +68,9 @@ I kept the flow deliberately high level because it is important to first underst
 
 A pipeline is basically an orchestration software that you can "program". You can say things like: First, I'd like you to check out this repository. When this succeeds, please run a few tests. You also can tell it that a human needs to approve something. Then after everything succeeded, the pipeline instructs a deployment mechanism to deploy your code. To simplify, a pipeline is a step by step instruction set of actions on an input, usually code, producing some output, usually a deployment, at the end of the process.
 
-You might wonder, that's cool, but how do I set this up myself? This is where the AWS **C**loud **D**evelopment **K**it ([CDK](https://github.com/aws/aws-cdk)) comes into play. The CDK allows you to define infrastructure as code (IaC). This is an important piece of the puzzle! In the past, you would log into the AWS console, and press a bunch of buttons, setting up the right tools... hopefully. It would be impossible to recreate the same environment without huge pain. 
+You might wonder, that's cool, but how do I set this up myself? This is where the AWS **C**loud **D**evelopment **K**it ([CDK](https://github.com/aws/aws-cdk)) comes into play. The CDK allows you to define infrastructure as code (IaC). This is an important piece of the puzzle! 
 
-When your service grew, you might have moved to CloudFormation to write complicated JSON or YAML files. So that you at least would be able to check your YAML files into a repo and apply source control. This still is quite painful if you ask me. CDK to the rescue. Now you can do cool stuff like this:
+In the past, you would log into the AWS console, and press a bunch of buttons, setting up the right tools... hopefully. It would be impossible to recreate the same environment without huge pain. When your service grew, you might have moved to CloudFormation to write complicated JSON or YAML files. So that you at least would be able to check your YAML files into a repo and apply source control. This still is quite painful if you ask me. CDK to the rescue. Now you can do cool stuff like this:
 
 ```
 const websiteAssets = new S3.Bucket(this, `website-production-assets`, {
@@ -141,10 +141,11 @@ This wraps up the infrastructure part of the new SaaS Manual website, lets have 
 
 ## UX / Layout
 
-Now that we had the infrastructure setup and that we could deploy a static site to AWS, it was time to do some styling and make the new site look good.
+Now that we had the infrastructure setup and that we could deploy a static site to AWS, it was time to do some styling and make the new site look good. 
+
 As I described in [a previous post](/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43), I am using a very basic site generator to generate HTML pages based on Markdown content. So all I had to do is style the HTML templates. I am using a CSS toolkit called [Tailwind CSS](https://tailwindcss.com). I love Tailwind, because it allows me to move fast, and it is fairly simple to learn. I also am using [Tailwind UI](https://tailwindui.com). I still had a license for another project.
 
-I won't dive into the details on how to use Tailwind in this post because the [Tailwind CSS docs](https://tailwindcss.com/docs) are amazing. Let me highlight instead how I am creating the CSS assets as part of the pipeline:
+I won't dive into the details on how to use Tailwind in this post because the [Tailwind CSS docs](https://tailwindcss.com/docs) are amazing. Let me highlight instead how I am creating the CSS assets as part of the pipeline execution:
 
 In the `package.json` I have a `build:css` script which looks as follows:
 
