@@ -10,6 +10,8 @@ import posts from './src/lib/posts';
 import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
+import decorator from './src/lib/decorator';
+
 (new Generator)
   .templates('./src/template')
   .use(posts)
@@ -23,6 +25,8 @@ import sitemap from './src/lib/sitemap';
   .useRemarkPlugin(iframe)
   .useRemarkPlugin(breaks)
   .useRemarkPlugin(footnotes, {inlineNotes: true})
+  // .useRemarkPlugin(decorator)
   .source('./src/content')
   .destination('./build')
   .build();
+
