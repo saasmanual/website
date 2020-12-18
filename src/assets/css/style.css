@@ -68,3 +68,12 @@ ul.toc h3 {
   margin-left: auto;
   margin-right: auto;
 }
+
+.tooltip .tooltip-text {
+  @apply invisible;
+}
+
+.tooltip:hover .tooltip-text,
+.tooltip-text:hover {
+  @apply visible;
+}

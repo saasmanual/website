@@ -1,5 +1,8 @@
 ---
 draft: true
-keywords: dns
+keywords: dns, domain name service
 layout: default.njk
 ---
+
+# What is DNS?
+
