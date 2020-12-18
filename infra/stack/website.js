@@ -1,7 +1,7 @@
 const { join, relative } = require('path');
 const { Stack, Duration } = require('@aws-cdk/core');
 const { PublicHostedZone, RecordTarget, ARecord } = require('@aws-cdk/aws-route53');
-const { CloudFrontTarget } = require('@aws-cdk/aws-route53-targets');
+const { CloudFrontTarget, BucketWebsiteTarget } = require('@aws-cdk/aws-route53-targets');
 const { PriceClass, CloudFrontWebDistribution, OriginProtocolPolicy } = require('@aws-cdk/aws-cloudfront');
 const { Bucket, BucketAccessControl, RedirectProtocol, ReplaceKey } = require('@aws-cdk/aws-s3');
 const { BucketDeployment, Source, CacheControl } = require('@aws-cdk/aws-s3-deployment');
@@ -41,7 +41,6 @@ class WebsiteStack extends Stack {
       }
     });
     
-
     const websiteAssets = new Bucket(this, `${id}-website-production-assets`, {
       accessControl: BucketAccessControl.PUBLIC_READ,
       bucketName: `saas-manual-website-prod-static-assets`,
@@ -81,6 +80,21 @@ class WebsiteStack extends Stack {
       zone,
       target: RecordTarget.fromAlias(new CloudFrontTarget(this.productionDistribution)),
       recordName: hostName
+    });
+
+    // Redirection from www.saasmanual.com to saasmanual.com
+    const websiteAssetsRedirect = new Bucket(this, `${id}-website-production-assets-www-redirect`, {
+      bucketName: `www.${hostName}`,
+      websiteRedirect: {
+        hostName: hostName,
+        protocol: RedirectProtocol.HTTPS
+      }
+    });
+
+    new ARecord(this, `${id}-alias-record-production-www-redirect`, {
+      zone,
+      target: RecordTarget.fromAlias(new BucketWebsiteTarget(websiteAssetsRedirect)),
+      recordName: `www.${hostName}`
     });
   }
 }
