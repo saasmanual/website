@@ -71,7 +71,7 @@ class WebsiteStack extends Stack {
       }],
       aliasConfiguration: {
         acmCertRef: certificateArn,
-        names: [hostName, `www.${hostName}`]
+        names: [hostName]
       },
       priceClass: PriceClass.PRICE_CLASS_100
     });
@@ -91,9 +91,26 @@ class WebsiteStack extends Stack {
       }
     });
 
+    const redirectDistribution = new CloudFrontWebDistribution(this, `${id}-website-production-distribution-redirect`, {
+      originConfigs: [{
+        customOriginSource: {
+          originProtocolPolicy: OriginProtocolPolicy.HTTP_ONLY,
+          domainName: websiteAssetsRedirect.bucketWebsiteDomainName
+        },
+        behaviors: [{
+          isDefaultBehavior: true
+        }]
+      }],
+      aliasConfiguration: {
+        acmCertRef: certificateArn,
+        names: [`www.${hostName}`]
+      },
+      priceClass: PriceClass.PRICE_CLASS_100
+    });
+
     new ARecord(this, `${id}-alias-record-production-www-redirect`, {
       zone,
-      target: RecordTarget.fromAlias(new BucketWebsiteTarget(websiteAssetsRedirect)),
+      target: RecordTarget.fromAlias(new CloudFrontTarget(redirectDistribution)),
       recordName: `www.${hostName}`
     });
   }
