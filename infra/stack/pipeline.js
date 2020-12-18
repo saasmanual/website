@@ -38,7 +38,10 @@ class PipelineStack extends Stack {
 
     const application = new Application(this, 'Website-Production', {
       stageName: 'Production',
-      description: 'Website application stack running in us-east-1.'
+      description: 'Website application stack running in us-east-1.',
+      env: {
+        region: 'us-east-1'
+      }
     });
     
     const stage = pipeline.addApplicationStage(application);
