@@ -1,5 +1,5 @@
 const { join, relative } = require('path');
-const { Stack, Duration, Aws } = require('@aws-cdk/core');
+const { Stack, Duration } = require('@aws-cdk/core');
 const { PublicHostedZone, RecordTarget, ARecord } = require('@aws-cdk/aws-route53');
 const { CloudFrontTarget, BucketWebsiteTarget } = require('@aws-cdk/aws-route53-targets');
 const { PriceClass, CloudFrontWebDistribution, OriginProtocolPolicy } = require('@aws-cdk/aws-cloudfront');
@@ -83,21 +83,20 @@ class WebsiteStack extends Stack {
     });
 
     // Redirection from www.saasmanual.com to saasmanual.com
-    const redirectBucketName = `www.${hostName}`;
     const websiteAssetsRedirect = new Bucket(this, `${id}-website-production-assets-www-redirect`, {
-      bucketName: redirectBucketName,
+      bucketName: `www.${hostName}`,
       websiteRedirect: {
         hostName: hostName,
         protocol: RedirectProtocol.HTTPS
       }
     });
 
-    const bucketWebsiteRedirectDomain = `${redirectBucketName}.s3-website-${Aws.REGION}.amazonaws.com`;
     const redirectDistribution = new CloudFrontWebDistribution(this, `${id}-website-production-distribution-redirect`, {
+      defaultRootObject: '',
       originConfigs: [{
         customOriginSource: {
           originProtocolPolicy: OriginProtocolPolicy.HTTP_ONLY,
-          domainName: bucketWebsiteRedirectDomain
+          domainName: websiteAssetsRedirect.bucketWebsiteDomainName
         },
         behaviors: [{
           isDefaultBehavior: true
