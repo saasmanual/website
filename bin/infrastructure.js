@@ -7,8 +7,9 @@ const app = new App();
 new PipelineStack(app, 'Website-Pipeline', {
   stackName: 'Website-Pipeline',
   description: 'Pipeline stack for SaaS Manual website.',
-  env: {
-    region: 'us-east-1'
+  env: { 
+    account: process.env.CDK_DEFAULT_ACCOUNT, 
+    region: process.env.CDK_DEFAULT_REGION 
   }
 });
 
