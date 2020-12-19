@@ -5,7 +5,7 @@ description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-grey.jpeg
 date: 2020-11-03 17:15:00
 author: nonken
-excerpt: Welcome! Time for another post 🎉 Now that you have some context on [why I started SaaS Manual](2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d.md), it finally is time to dive into how I launched the initial landing page at [https://saasmanual.com](https://saasmanual.com). With a very tiny budget and in a very short amount of time.
+excerpt: Welcome! Time for another post 🎉 Now that you have some context on [why I started SaaS Manual](/2020-10-22-Introduction-422e0c9a4939447e8587d4229c2fcd3d), it finally is time to dive into how I launched the initial landing page at [https://saasmanual.com](https://saasmanual.com). With a very tiny budget and in a very short amount of time.
 ---
 
 Before I will dive into the topic of this week, I want to announce the [SaaS Manual Discord channel](https://discord.gg/gGTD6eX). The purpose of this channel is to create a space for us to exchange ideas, questions, feedback, or really anything related to building SaaS projects. If you are curious about it please [feel welcome to join here](https://discord.gg/gGTD6eX).
