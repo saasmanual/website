@@ -18,14 +18,19 @@ import decorator from './src/lib/decorator';
   .use(config)
   .use(meta)
   .use(sitemap)
-  .useRemarkPlugin(directive)
-  .useRemarkPlugin(toc)
-  .useRemarkPlugin(alert)
-  .useRemarkPlugin(floatingImage)
-  .useRemarkPlugin(iframe)
-  .useRemarkPlugin(breaks)
-  .useRemarkPlugin(footnotes, {inlineNotes: true})
-  // .useRemarkPlugin(decorator)
+  .useRemarkPlugin((ctx) => { return directive; })
+  .useRemarkPlugin((ctx) => { return toc; })
+  .useRemarkPlugin((ctx) => { return alert; })
+  .useRemarkPlugin((ctx) => { return floatingImage; })
+  .useRemarkPlugin((ctx) => { return iframe; })
+  .useRemarkPlugin((ctx) => { return breaks; })
+  .useRemarkPlugin((ctx) => { 
+    return { 
+      plugin: footnotes, 
+      opts: {inlineNotes: true} 
+    }
+  })
+  .useRemarkPlugin(decorator)
   .source('./src/content')
   .destination('./build')
   .build();

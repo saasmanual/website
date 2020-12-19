@@ -4,7 +4,78 @@
       openSidebar: false
     }
   }
+
+  window.tooltipState;
+  window.tooltip = function(definition) {
+    return {
+      showTooltip: function(e, definition) {
+        try {
+          const data = JSON.parse(decodeURIComponent(definition));
+          window.tooltipState.show(e.target, data);
+        } catch(e) {
+          console.error('SaaS Manual Tooltip error:', e);
+        }
+      },
+      hideTooltip: function() {
+        window.tooltipState.hide();
+      },
+      definition
+    }
+  }
+
+  function initTooltip() {
+    return {
+      isOpen: false,
+      top: '-100px',
+      left: '-100px',
+      element: null,
+      data: {},
+      show(element, data) {
+        this.element = element;
+        this.data = data;
+        this.isOpen = true;
+        this.$nextTick(this.reposition.bind(this));
+      },
+      hide() {
+        this.isOpen = false;
+        this.data = {};
+        this.top = '-100px';
+        this.left = '-100px';
+        this.element = null;
+      },
+      reposition() {
+        if (!this.element) return;
+
+        const { left, top } = this.element.getBoundingClientRect();
+        const { height } = this.$refs.tooltip.getBoundingClientRect();
+        this.top = `${top + window.scrollY - height - 10}px`;
+        this.left = `${left - 10}px`;
+      },
+      setState() {
+        window.tooltipState = this;
+        window.onresize = this.hide.bind(this);
+      }
+    }
+  }
 </script>
+<div x-data="initTooltip()" x-init="setState()">
+  <span x-ref="tooltip" :class="{ 'hidden': !isOpen, 'inline-block absolute z-50 bg-gray-600 text-white text-s rounded py-2 pl-4 pr-8 shadow tooltip-text': true }" :style="`top: ${top}; left: ${left}`">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" @click="isOpen=false" class="w-4 h-4 absolute right-2 top-2 cursor-pointer">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+    </svg>
+
+    <template x-if="data.tools">
+      <div>
+        <div class="text-xs font-bold">Tools</div>
+        <template x-for="(item, index) in data.tools" :key="item">
+            <!-- You can also reference "index" inside the iteration if you need. -->
+            <a x-bind:href="item.link" x-text="item.title" class="underline"></a>
+        </template>
+      </div>
+    </template>
+    <svg class="absolute text-black h-2 left-0 ml-3 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current text-gray-600" points="0,0 127.5,127.5 255,0"/></svg>
+  </span>
+</div>
 <div class="pb-16 sm:pb-20 fixed w-full z-10" x-data="initNavigation()">
   <div class="relative bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
