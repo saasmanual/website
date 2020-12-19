@@ -27,7 +27,7 @@ Welcome! Time for another post 🎉 Now that you have some context on [why I sta
 ## Ingredients needed
 
 - 1 Domain (< $10,- year)
-- 1 Cloudflare account (free)
+- 1 [Cloudflare](https://cloudflare.com) account (free)
 - 1 [Notion](https://notion.so) account (free)
 - 1 [Plausible](https://plausible.io/) account
 - 1 Idea to translate into content (free)
