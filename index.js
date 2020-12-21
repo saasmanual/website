@@ -11,7 +11,7 @@ import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
 import decorator from './src/lib/decorator';
-import embedImage from './src/lib/embed-image';
+import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed-image]
 
 (new Generator)
   .templates('./src/template')
@@ -25,7 +25,7 @@ import embedImage from './src/lib/embed-image';
   .useRemarkPlugin((ctx) => { return floatingImage; })
   .useRemarkPlugin((ctx) => { return iframe; })
   .useRemarkPlugin((ctx) => { return breaks; })
-  .useRemarkPlugin((ctx) => { return embedImage; })
+  .useRemarkPlugin((ctx) => { return embedImage; }) // [<embed:markdown-plugin-embed-image]
   .useRemarkPlugin((ctx) => { 
     return { 
       plugin: footnotes, 
