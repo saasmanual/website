@@ -1,4 +1,4 @@
-// [embed:markdown-plugin-embed-image]
+// [embed:markdown-plugin-embed-image-js]
 import visit from 'unist-util-visit';
 import h from 'hastscript';
 
@@ -20,7 +20,7 @@ function embedImage() {
      * It is required for the SaaS Manual embedding feature.
      * Please remove this line if you just want to use the plugin.
      */ 
-    hast.properties['data-attr-embed'] = 'markdown-plugin-embed-image';
+    hast.properties['data-attr-embed'] = 'markdown-plugin-embed-image-html';
 
     data.hName = 'img';
     data.hProperties = hast.properties;
