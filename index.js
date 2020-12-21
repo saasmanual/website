@@ -11,6 +11,7 @@ import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
 import decorator from './src/lib/decorator';
+import embedImage from './src/lib/embed-image';
 
 (new Generator)
   .templates('./src/template')
@@ -24,6 +25,7 @@ import decorator from './src/lib/decorator';
   .useRemarkPlugin((ctx) => { return floatingImage; })
   .useRemarkPlugin((ctx) => { return iframe; })
   .useRemarkPlugin((ctx) => { return breaks; })
+  .useRemarkPlugin((ctx) => { return embedImage; })
   .useRemarkPlugin((ctx) => { 
     return { 
       plugin: footnotes, 
