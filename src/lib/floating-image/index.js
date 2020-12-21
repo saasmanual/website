@@ -2,7 +2,7 @@ import visit from 'unist-util-visit';
 import h from 'hastscript';
 import toHast from 'mdast-util-to-hast';
 
-function alert() {
+function floatingImage() {
   return transform;
 
   function transform(tree) {
@@ -36,5 +36,5 @@ function alert() {
 }
 
 export {
-  alert as default
+  floatingImage as default
 }
