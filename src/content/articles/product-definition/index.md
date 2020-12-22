@@ -22,6 +22,10 @@ All this aside, I am excited about this post. The direction of SaaS Manual is be
 
 **Image embed:** I wrote a new Markdown plugin that embeds images and adds rounded corners and a light drop-shadow. You can find the source code [on GitHub](https://github.com/saasmanual/website/blob/main/src/lib/embed-image/index.js).
 
+If you haven't signed up for SaaS Manual yet, you can do so below:
+
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+
 ## Shaping a product
 
 When I launched SaaS Manual, I had only a vague idea about how the site will develop in the long run. What was clear is that I wanted to show you **1. How to build SaaS products** and **2. How to do this based on a real-world example: SaaS Manual**. I didn't yet know how the best format for this would look like. 
