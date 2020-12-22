@@ -25,7 +25,7 @@ function embedImage() {
     data.hName = 'img';
     data.hProperties = hast.properties;
     data.hProperties.src = `/assets/img/posts${hast.properties.src}`;
-    data.hProperties.className = 'shadow rounded';
+    data.hProperties.className = hast.properties.className || 'shadow rounded';
   }
 }
 
