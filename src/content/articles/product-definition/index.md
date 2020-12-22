@@ -14,7 +14,7 @@ All this aside, I am excited about this post. The direction of SaaS Manual is be
 
 ## What's New
 
-**Human friendly URLs:** Notion has URL's which are not that easy to remember, for example: [/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43](https://saasmanual.com/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43) - I implemented a simple redirect. Moving forward you can find all posts under "articles", for instance [/articles/reinventing-the-wheel/](https://saasmanual.com/articles/reinventing-the-wheel/).
+**Human-friendly URLs:** Notion has URL's which are not that easy to remember, for example: [/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43](https://saasmanual.com/2020-11-18-Reinventing-The-Wheel-d3e0460b52784c94938db5cf0e67ee43) - I implemented a simple redirect. Moving forward you can find all posts under "articles", for instance, [/articles/reinventing-the-wheel/](https://saasmanual.com/articles/reinventing-the-wheel/).
 
 **Tools directory:** @alejandromarco on [Discord](https://discord.gg/wHtewNG) asked if it was possible to list all tools which I am using to build SaaS Manual. Based on this ask, I implemented a "highlighter" which goes through all articles and highlights words that mention a tool I am using. I will explain the thought process which went into building this feature in this post below.
 
@@ -77,7 +77,7 @@ The second issue I wanted to address is the need to reference source code in my 
 * As a SaaS Manual user, I always want to see up to date source code in SaaS Manual posts.
 * As a SaaS Manual author, I want to easily be able to embed real source code into my posts.
 * As a SaaS Manual author, I want source code that I embed into posts, to automatically update when the underlying code changes.
-* As a SaaS Manual author, I want to get a warning if a posts embeds source code which no longer exists.
+* As a SaaS Manual author, I want to get a warning if a post embeds source code that no longer exists.
 * As a SaaS Manual author, I want to be able to move code around without breaking articles.
 
 I came up with a simple mechanism to do this. Say I have source code looking like this.
@@ -108,7 +108,7 @@ with this, I can create an index of all snippets which I can embed. I would have
 
 1. Parse the source code and look for the `[embed:ID]` and `[/embed]` pattern.
 2. Create a map with all embeddable code snippets.
-3. Write a Markdown plugin which would allow me to use a Markdown directive to embed source code.
+3. Write a Markdown plugin that would allow me to use a Markdown directive to embed source code.
 3. Embed the snippets into the generated HTML when I transform the Markdown.
 
 So here I have a rough outline for a simple implementation of this feature. It covers all current needs and allows me to take the next step: Building this feature. I have not built this feature just yet, but will do so next, as this will result in SaaS Manual having a minimum of features that allow me to dive deep into topics.
