@@ -22,7 +22,9 @@ function floatingImage() {
     const hChildren = [h('img', {
       src: node.attributes.image,
       width: node.attributes.width || 100,
-      className: 'sm:float-left sm:mr-8 mb-8'
+      height: node.attributes.height || 100,
+      className: 'sm:float-left sm:mr-8 mb-8',
+      alt: node.attributes.alt || 'Floating Image',
     })];
 
     node.children.forEach((child) => {

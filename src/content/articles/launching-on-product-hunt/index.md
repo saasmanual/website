@@ -12,7 +12,7 @@ Hope you all had a good start to the week! And if you haven't joined the SaaS Ma
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 Now, let's dive into what went into the launch of SaaS Manual. Let me share everything that I did to get ready, the launch, and what I did after the launch. 
 

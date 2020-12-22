@@ -18,7 +18,7 @@ The year is coming to an end, and wow, what a strange year. Time flew, yet the w
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 ## SaaS Manual on AWS
 

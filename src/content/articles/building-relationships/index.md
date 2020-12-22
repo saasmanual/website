@@ -10,7 +10,7 @@ excerpt: In this post, let me dive a bit into my thinking around building a comm
 
 If you haven't signed up for this course yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 I hope you had a really good start to this new week. Get ready for another SaaS Manual post. If this is your first email, you can [find previous posts here](../SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27.md).
 

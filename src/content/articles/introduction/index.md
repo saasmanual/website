@@ -10,7 +10,7 @@ excerpt: Wow! Here we are, I announced [SaaS Manual](https://saasmanual.com) a w
 
 If you haven't signed up for this course yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 Wow! Here we are, I announced [SaaS Manual](https://saasmanual.com) a week ago (October 15th, 2020) and by now 655 people have signed up to join this adventure. This is my first post to you and it is a bit of a read but I ask you to stay with me as it provides context on how this all started.
 

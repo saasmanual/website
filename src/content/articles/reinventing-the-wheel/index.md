@@ -20,7 +20,7 @@ Welcome to another episode of SaaS Manual 🎉 The past weeks have been wonderfu
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 ## To build or not to build
 

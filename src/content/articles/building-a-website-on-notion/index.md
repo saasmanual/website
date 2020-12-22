@@ -14,7 +14,7 @@ I also want to thank a few folks: Reshen Amin and Justin Dray for reviewing the 
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 Welcome! Time for another post 🎉 Now that you have some context on [why I started SaaS Manual](2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d.md), it finally is time to dive into how I launched the initial landing page at [https://saasmanual.com](https://saasmanual.com). With a very tiny budget and in a very short amount of time.
 

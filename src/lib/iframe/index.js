@@ -15,7 +15,8 @@ function iframe() {
     const hast = h('iframe', {
       src: node.attributes.src,
       width: node.attributes.width || '100%',
-      height: node.attributes.height || '250'
+      height: node.attributes.height || '250',
+      title: node.attributes.title || 'Embedded Content'
     })
     data.hName = hast.tagName
     data.hProperties = hast.properties

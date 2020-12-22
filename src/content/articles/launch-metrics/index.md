@@ -12,7 +12,7 @@ Wow, it's been a super cool day yesterday 🙏🏻. I announced [SaaS Manual on 
 
 Before diving into the metrics though, have a look at the picture above. I took this yesterday evening at the sea in The Netherlands, just too good 🌊☀️. And if you haven't joined the journey yet, here you go:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 Now let's dive in. In the spirit of being fully transparent about the process of building SaaS Manual into a fully-fledged product, let me share the metrics I have so far:
 

@@ -24,7 +24,7 @@ All this aside, I am excited about this post. The direction of SaaS Manual is be
 
 If you haven't signed up for SaaS Manual yet, you can do so below:
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 ## Shaping a product
 

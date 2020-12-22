@@ -10,7 +10,7 @@ description: Learn how to build SaaS products from scratch.
 
 ## Curious? Read on, you are at the right place 🤗
 
-:::floating-image{image=/assets/img/nikolai.png width=200}
+:::floating-image{image=/assets/img/nikolai.png width=200 height=200 alt="Nikolai Onken"}
 I ([find me here on Twitter](https://twitter.com/nonken)) started working on the web around 1996 and since then was fortunate to build many SaaS products with incredibly talented people, including most recently, [Cloud9 IDE](https://aws.amazon.com/cloud9/) as the VP of Engineering. 
 
 **Cloud9 IDE was acquired by AWS** and I have spent the past three years at Amazon, gaining a lot of valuable insight and learning many lessons on how to build and operate software systems at scale. It's time to share this knowledge with you.
@@ -43,7 +43,7 @@ From scratch.**
 
 SaaS Manual currently exists only on this page. The domain [saasmanual.com](https://saasmanual.com), Twitter handle [@saasmanual](https://twitter.com/saasmanual), [Facebook page](https://www.facebook.com/saasmanual/), and [GitHub organization](https://github.com/saasmanual) have been created but nothing else exists. Sign up below, if you want to join this journey. I promise it will be fun and insightful. And in case you wonder what the first lesson will be? It most likely will be the **creation of the actual SaaS Manual landing page.** 
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 # What will you learn?
 
@@ -61,7 +61,7 @@ The topics below will likely be covered by building [saasmanual.com](http://saas
 
 Ok, this should give you an idea of what you will embark on if you decide to join this adventure. Leave your email below and you will be the first to get notified of the next steps of building SaaS Manual.
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 ## Ideas for SaaS Manual?
 
@@ -118,7 +118,7 @@ Content for SaaS Manual gets reviewed by experts in their field. Thank you for y
 
 There is nothing more to say, you made it and that is amazing 🙈. If you love the idea, join the journey below, it'll be a fun ride 🙏🏻.
 
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
 ## Updates / Articles
 
@@ -283,7 +283,7 @@ Stop it!!! Really, its done! 😇 🥴
 &nbsp;
 &nbsp;
 Ok ok, you won!!! In case you didn't join the SaaS Manual adventure yet, here you go 🤗:
-:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1}
+:iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 &nbsp;
 &nbsp;
 &nbsp;
