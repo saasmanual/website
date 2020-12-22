@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Product Definition
-description: After a successful launch on Notion, it was time to move to AWS. Here is what I did.
+description: The direction of SaaS Manual is becoming more clear, so let me dive right in.
 cover: posts/twiske-water.jpeg
 date: 2020-12-22 11:24:00
 author: nonken
