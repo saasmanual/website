@@ -24,7 +24,7 @@ All this aside, I am excited about this post. The direction of SaaS Manual is be
 
 ## Shaping a product
 
-When I launched SaaS Manual, I had only a vague idea about how the site will develop in the long run. What was clear is that I wanted to show you **1. How to build SaaS products** and **2. How to do this based on a real-world example: SaaS Manual**. I didn't know how the best format for this would look like. 
+When I launched SaaS Manual, I had only a vague idea about how the site will develop in the long run. What was clear is that I wanted to show you **1. How to build SaaS products** and **2. How to do this based on a real-world example: SaaS Manual**. I didn't yet know how the best format for this would look like. 
 
 After a couple of posts and moving SaaS Manual to AWS, I am now having a much clearer idea. Let me lay out my thought process:
 
@@ -44,13 +44,13 @@ Based on this experience, my conclusion was that I needed SaaS Manual to be the 
 
 **But how?**
 
-I started with the SaaS Manual landing page and the idea to send out a regular email to anyone who signed up. It turned out that there is a lot that goes into building a SaaS product. After sending out a few emails, I started feeling that I wasn't able to go into enough detail in one post so started thinking about a solution for this. At the same time, I started adding the "What's new" section to posts. You see in this post, a lot already has happened in the past week. 
+I started with the SaaS Manual landing page and the idea to send out a regular email to anyone who signed up. It turned out that there is a lot that goes into building a SaaS product. After sending out a few emails, I started feeling that I wasn't able to go into enough detail in one post so I started thinking about a solution for this. At the same time, I started adding the "What's new" section to posts. You see in this post, a lot already has happened in the past week. 
 
 Based on a few conversations in the SaaS Manual Discord channel, I got two ideas:
 
 ## 1. Allow to dive deep into topics
 
-When I write new posts, I use a lot of terminology which might not be clear to folks. Terminology like CodePipeline, Cloudflare Workers, and much more. It is impossible to explain everything in one post, the post simply would become too large, so I was looking for a way to allow you to dive deeper into topics. Based on your need and your current understanding of technology. 
+When I write new posts, I use a lot of terminology which might not be clear to folks. Terminology like CodePipeline, Cloudflare Workers, and much more. It is impossible to explain everything in one post, the post simply would become too large. I was looking for a way to allow you to dive deeper into topics, based on your need and your current understanding of technology. 
 
 At the same time, a SaaS Manual user, Alejandro suggested having a "tools" directory, of all tools I am using, because there are a lot. I put these two requirements together and came up with the following list:
 
@@ -58,7 +58,7 @@ At the same time, a SaaS Manual user, Alejandro suggested having a "tools" direc
 * As a SaaS Manual author, I want to be able to write dedicated articles about an in-depth topic.
 * As a SaaS Manual author, I want those articles to be automatically referenced anywhere on the site where certain keywords show up. So I don't have to do this manually.
 
-Based on these requirements, I built a simple Markdown plugin that would go through the text of all posts and wrap found occurrences with a small tooltip decorator. As described in the "What's new" section above, you can find this feature live on the "[Building a website on Notion](https://saasmanual.com/articles/building-a-website-on-notion/)" post.
+Based on these requirements, I built a simple Markdown plugin that would go through the text of all posts and wrap found occurrences with a small tooltip decorator. You can find this feature live on the "[Building a website on Notion](https://saasmanual.com/articles/building-a-website-on-notion/)" post. Search for the word "Cloudflare" and you will see the tooltip show up.
 
 I can now add new content by simply creating a new Markdown file in the `/content/tools` directory and assigning a title and a few keywords:
 
@@ -125,10 +125,10 @@ The basic building blocks to dive deeply into topics are now in place. I am now 
 
 This update mostly covers two parts: 
 
-1. What happened in the past two weeks, the high-level SaaS Manual journey
+1. What happened in the past two weeks: The high-level SaaS Manual journey
 2. Short summaries to in-depth articles of new features I have built in the past two weeks.
 
-### 2. Regular feature updates to the Saas manual website
+### 2. Regular feature updates to the Saas Manual website
 
 I will push new updates to the SaaS Manual website regularly. I will also start writing in-depth posts on certain topics. Those posts will go live whenever I think they are ready to go out. I will share those on social media and other channels. And link to them in the bi-weekly email I mentioned above.
 
