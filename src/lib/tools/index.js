@@ -22,16 +22,11 @@ async function tools(generator) {
     const parts = file.split('/');
     
     if (parts[0] !== 'tools') continue;
+    if (parts[1] === 'index.md') continue;
 
-    tools.push({
-      title: props.data.title,
-      readingTime: readingTime(props.content).text,
-      link: `/${dirname(file)}`,
-      excerpt: remark()
-        .use(asExcerpt, { omission: "...", pruneLength: 240 })
-        .use(html)
-        .processSync(props.data.excerpt || props.content)
-    });
+    tools.push(Object.assign({
+      link: `/${dirname(file)}`
+    }, props.data));
   }
 
   tools = tools.sort((a, b) => {
