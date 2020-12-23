@@ -1,7 +1,9 @@
 ---
 keywords: cloudflare
 layout: default.njk
-title: Cloudflare Service Overview
+title: Cloudflare
+website: https://cloudflare.com
+logo: cloudflare.svg
 inUse: false
 ---
 

@@ -1,7 +1,9 @@
 ---
 keywords: cloud9
 layout: default.njk
-title: Cloud9 Service Overview
+title: AWS Cloud9
+website: https://c9.io 
+logo: cloud9.svg
 inUse: false
 ---
 
