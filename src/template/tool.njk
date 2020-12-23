@@ -42,6 +42,15 @@
       </dl>
     </div>
     {{ content|safe }}
+    
+    {% if backReferences|length %}
+    <h3>{{title}} is referenced in the following articles</h3>
+      {% for key, item in backReferences %}
+        <div>
+        <a href="{{item.link}}">{{item.title}}</a>
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 </body>
 </html>

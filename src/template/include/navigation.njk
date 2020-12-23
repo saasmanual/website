@@ -11,7 +11,16 @@
       showTooltip: function(e, definition) {
         try {
           const data = JSON.parse(decodeURIComponent(definition));
-          window.tooltipState.show(e.target, data);
+          const items = {};
+
+          for (const type in data) {
+            for (const item in data[type]) {
+              if (!items[type]) items[type] = [];
+              items[type].push(data[type][item]);
+            }
+          }
+          
+          window.tooltipState.show(e.target, items);
         } catch(e) {
           console.error('SaaS Manual Tooltip error:', e);
         }
