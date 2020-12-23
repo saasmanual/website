@@ -1,149 +1,149 @@
-<script>
-  function initNavigation() {
-    return {
-      openSidebar: false
-    }
-  }
-
-  window.tooltipState;
-  window.tooltip = function(definition) {
-    return {
-      showTooltip: function(e, definition) {
-        try {
-          const data = JSON.parse(decodeURIComponent(definition));
-          const items = {};
-
-          for (const type in data) {
-            for (const item in data[type]) {
-              if (!items[type]) items[type] = [];
-              items[type].push(data[type][item]);
-            }
-          }
-          
-          window.tooltipState.show(e.target, items);
-        } catch(e) {
-          console.error('SaaS Manual Tooltip error:', e);
-        }
-      },
-      hideTooltip: function() {
-        window.tooltipState.hide();
-      },
-      definition
-    }
-  }
-
-  function initTooltip() {
-    return {
-      isOpen: false,
-      top: '-100px',
-      left: '-100px',
-      element: null,
-      data: {},
-      show(element, data) {
-        this.element = element;
-        this.data = data;
-        this.isOpen = true;
-        this.$nextTick(this.reposition.bind(this));
-      },
-      hide() {
-        this.isOpen = false;
-        this.data = {};
-        this.top = '-100px';
-        this.left = '-100px';
-        this.element = null;
-      },
-      reposition() {
-        if (!this.element) return;
-
-        const { left, top } = this.element.getBoundingClientRect();
-        const { height } = this.$refs.tooltip.getBoundingClientRect();
-        this.top = `${top + window.scrollY - height - 10}px`;
-        this.left = `${left - 10}px`;
-      },
-      setState() {
-        window.tooltipState = this;
-        window.onresize = this.hide.bind(this);
+  <script>
+    function initNavigation() {
+      return {
+        openSidebar: false
       }
     }
-  }
-</script>
-<div x-data="initTooltip()" x-init="setState()">
-  <span x-ref="tooltip" :class="{ 'hidden': !isOpen, 'inline-block absolute z-50 bg-gray-600 text-white text-s rounded py-2 pl-4 pr-8 shadow tooltip-text': true }" :style="`top: ${top}; left: ${left}`">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" @click="isOpen=false" class="w-4 h-4 absolute right-2 top-2 cursor-pointer">
-      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-    </svg>
 
-    <template x-if="data.tools">
-      <div>
-        <div class="text-xs font-bold">Tools</div>
-        <template x-for="(item, index) in data.tools" :key="item">
-            <!-- You can also reference "index" inside the iteration if you need. -->
-            <a x-bind:href="item.link" x-text="item.title" class="underline"></a>
-        </template>
-      </div>
-    </template>
-    <svg class="absolute text-black h-2 left-0 ml-3 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current text-gray-600" points="0,0 127.5,127.5 255,0"/></svg>
-  </span>
-</div>
-<div class="pb-16 sm:pb-20 fixed w-full z-10" x-data="initNavigation()">
-  <div class="relative bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-        <div class="flex justify-start">
-          <a href="/?nav">
-            <span class="sr-only">SaaS Manual</span>
-            <img src="/assets/img/saasmanual-logo.svg" width="45" height="45" alt="SaaS Manual Logo" />
-          </a>
+    window.tooltipState;
+    window.tooltip = function(definition) {
+      return {
+        showTooltip: function(e, definition) {
+          try {
+            const data = JSON.parse(decodeURIComponent(definition));
+            const items = {};
+
+            for (const type in data) {
+              for (const item in data[type]) {
+                if (!items[type]) items[type] = [];
+                items[type].push(data[type][item]);
+              }
+            }
+            
+            window.tooltipState.show(e.target, items);
+          } catch(e) {
+            console.error('SaaS Manual Tooltip error:', e);
+          }
+        },
+        hideTooltip: function() {
+          window.tooltipState.hide();
+        },
+        definition
+      }
+    }
+
+    function initTooltip() {
+      return {
+        isOpen: false,
+        top: '-100px',
+        left: '-100px',
+        element: null,
+        data: {},
+        show(element, data) {
+          this.element = element;
+          this.data = data;
+          this.isOpen = true;
+          this.$nextTick(this.reposition.bind(this));
+        },
+        hide() {
+          this.isOpen = false;
+          this.data = {};
+          this.top = '-100px';
+          this.left = '-100px';
+          this.element = null;
+        },
+        reposition() {
+          if (!this.element) return;
+
+          const { left, top } = this.element.getBoundingClientRect();
+          const { height } = this.$refs.tooltip.getBoundingClientRect();
+          this.top = `${top + window.scrollY - height - 10}px`;
+          this.left = `${left - 10}px`;
+        },
+        setState() {
+          window.tooltipState = this;
+          window.onresize = this.hide.bind(this);
+        }
+      }
+    }
+  </script>
+  <div x-data="initTooltip()" x-init="setState()">
+    <span x-ref="tooltip" :class="{ 'hidden': !isOpen, 'inline-block absolute z-50 bg-gray-600 text-white text-s rounded py-2 pl-4 pr-8 shadow tooltip-text': true }" :style="`top: ${top}; left: ${left}`">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" @click="isOpen=false" class="w-4 h-4 absolute right-2 top-2 cursor-pointer">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+      </svg>
+
+      <template x-if="data.tools">
+        <div>
+          <div class="text-xs font-bold">Tools</div>
+          <template x-for="(item, index) in data.tools" :key="item">
+              <!-- You can also reference "index" inside the iteration if you need. -->
+              <a x-bind:href="item.link" x-text="item.title" class="underline"></a>
+          </template>
         </div>
-        <div class="-mr-2 -my-2 md:hidden">
-          <button @click="openSidebar = true" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-            <span class="sr-only">Open menu</span>
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-        </div>
-        <nav class="hidden md:flex space-x-10">
-          <div class="relative">
-            <a href="/articles" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              <span>Articles</span>
+      </template>
+      <svg class="absolute text-black h-2 left-0 ml-3 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current text-gray-600" points="0,0 127.5,127.5 255,0"/></svg>
+    </span>
+  </div>
+  <div class="fixed w-full z-10" x-data="initNavigation()">
+    <div class="relative bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+          <div class="flex justify-start">
+            <a href="/?nav">
+              <span class="sr-only">SaaS Manual</span>
+              <img src="/assets/img/saasmanual-logo.svg" width="45" height="45" alt="SaaS Manual Logo" />
             </a>
           </div>
-          <div class="relative">
-            <a href="/tools" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              <span>Tools</span>
-            </a>
-          </div>
-        </nav>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"></div>
-      </div>
-    </div>
-
-    <div :class="{'block': openSidebar, 'hidden': !openSidebar}" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-      <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-        <div class="px-5 pt-4 flex items-center justify-between">
-          <div>
-            <img src="/assets/img/saasmanual-logo.svg" width="45" height="45" alt="SaaS Manual Logo" />
-          </div>
-          <div class="-mr-2">
-            <button type="button" @click="openSidebar = false" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-              <span class="sr-only">Close menu</span>
+          <div class="-mr-2 -my-2 md:hidden">
+            <button @click="openSidebar = true" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span class="sr-only">Open menu</span>
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
               </svg>
             </button>
           </div>
+          <nav class="hidden md:flex space-x-10">
+            <div class="relative">
+              <a href="/articles" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <span>Articles</span>
+              </a>
+            </div>
+            <div class="relative">
+              <a href="/tools" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <span>Tools</span>
+              </a>
+            </div>
+          </nav>
+          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0"></div>
         </div>
-        <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-          <div class="px-2 pt-2 pb-3" role="none">
-            <a href="/articles" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Articles</a>
+      </div>
+
+      <div :class="{'block': openSidebar, 'hidden': !openSidebar}" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img src="/assets/img/saasmanual-logo.svg" width="45" height="45" alt="SaaS Manual Logo" />
+            </div>
+            <div class="-mr-2">
+              <button type="button" @click="openSidebar = false" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="px-2 pt-2 pb-3" role="none">
-            <a href="/tools" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Tools</a>
+          <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+            <div class="px-2 pt-2 pb-3" role="none">
+              <a href="/articles" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Articles</a>
+            </div>
+            <div class="px-2 pt-2 pb-3" role="none">
+              <a href="/tools" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Tools</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="pt-20">
+  <div class="pt-20"></div>
