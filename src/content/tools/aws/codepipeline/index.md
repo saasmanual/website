@@ -1,5 +1,4 @@
 ---
-draft: true
 keywords: codepipeline
 layout: tool.njk
 title: AWS CodePipeline

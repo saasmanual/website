@@ -1,5 +1,4 @@
 ---
-draft: true
 keywords: markdown
 layout: tool.njk
 title: Markdown

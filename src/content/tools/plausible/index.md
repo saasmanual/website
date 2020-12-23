@@ -1,5 +1,4 @@
 ---
-draft: true
 keywords: plausible
 layout: tool.njk
 title: Plausible

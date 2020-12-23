@@ -1,5 +1,4 @@
 ---
-draft: true
 keywords: codebuild
 layout: tool.njk
 title: AWS CodeBuild

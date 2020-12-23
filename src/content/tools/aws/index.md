@@ -1,5 +1,4 @@
 ---
-draft: true
 keywords: aws
 layout: tool.njk
 title: AWS (Amazon Web Services)
