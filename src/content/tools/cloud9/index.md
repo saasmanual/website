@@ -1,7 +1,9 @@
 ---
 keywords: cloud9
-layout: default.njk
-title: Cloud9 Service Overview
+layout: tool.njk
+title: AWS Cloud9
+website: https://c9.io 
+logo: cloud9.svg
 inUse: false
 ---
 
@@ -12,7 +14,3 @@ Cloud9 IDE is an Online IDE (integrated development environment), published as o
 ## How does SaaS Manual use Cloudflare?
 
 I (Nikolai) am not using Cloud9 atm. I used to be the VP of Engineering at Cloud9 and left AWS in 2018.
-
-## Links
-
-[Visit Cloud9 here](https://c9.io).

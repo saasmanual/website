@@ -7,6 +7,7 @@ import iframe from './src/lib/iframe';
 import floatingImage from './src/lib/floating-image';
 import footnotes from 'remark-footnotes';
 import posts from './src/lib/posts';
+import tools from './src/lib/tools';
 import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
@@ -16,6 +17,7 @@ import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed
 (new Generator)
   .templates('./src/template')
   .use(posts)
+  .use(tools)
   .use(config)
   .use(meta)
   .use(sitemap)
