@@ -1,5 +1,4 @@
 ---
-draft: true
 keywords: s3
 layout: tool.njk
 title: Amazon S3
