@@ -39,7 +39,7 @@
     "@aws-cdk/aws-s3-deployment": "^1.75.0",
     "@aws-cdk/core": "^1.75.0",
     "@aws-cdk/pipelines": "^1.75.0",
-    "@saasmanual/generator": "0.0.10",
+    "@saasmanual/generator": "0.0.12",
     "glob": "^7.1.6",
     "hast-util-from-parse5": "^6.0.1",
     "hastscript": "^6.0.0",
