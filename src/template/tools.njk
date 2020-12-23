@@ -45,7 +45,7 @@
                           {{ item.title }}
                         </div>
                         <div class="text-sm text-gray-500">
-                          <a href="{{ item.website }}" target="_blank">Visit Website</a>
+                          <a href="{{ item.affiliateLink if item.affiliateLink else item.website }}" target="_blank">{{item.website}}</a>
                         </div>
                       </div>
                     </div>

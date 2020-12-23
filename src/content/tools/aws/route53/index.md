@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: route53
-layout: default.njk
+layout: tool.njk
 title: Amazon Route53
 website: https://aws.amazon.com/route53/
 logo: aws.svg

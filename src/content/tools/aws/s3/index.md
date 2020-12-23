@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: s3
-layout: default.njk
+layout: tool.njk
 title: Amazon S3
 website: https://aws.amazon.com/s3/
 logo: aws.svg

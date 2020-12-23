@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: github
-layout: default.njk
+layout: tool.njk
 title: GitHub
 website: https://github.com
 logo: github.svg

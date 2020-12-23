@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: cdk
-layout: default.njk
+layout: tool.njk
 title: AWS CDK
 website: https://aws.amazon.com/cdk/
 logo: aws.svg

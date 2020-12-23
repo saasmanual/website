@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: markdown
-layout: default.njk
+layout: tool.njk
 title: Markdown
 website: https://daringfireball.net/projects/markdown/
 logo: markdown.svg

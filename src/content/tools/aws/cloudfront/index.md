@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: cloudfront
-layout: default.njk
+layout: tool.njk
 title: Amazon CloudFront
 website: https://aws.amazon.com/cloudfront/
 logo: aws.svg

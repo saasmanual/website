@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: codebuild
-layout: default.njk
+layout: tool.njk
 title: AWS CodeBuild
 website: https://aws.amazon.com/codebuild/
 logo: aws.svg

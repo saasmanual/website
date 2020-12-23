@@ -1,6 +1,6 @@
 ---
 keywords: cloudflare
-layout: default.njk
+layout: tool.njk
 title: Cloudflare
 website: https://cloudflare.com
 logo: cloudflare.svg
@@ -14,7 +14,3 @@ Cloudflare, Inc. is an American web infrastructure and website security company,
 ## How does SaaS Manual use Cloudflare?
 
 Currently, SaaS Manual is not using Cloudflare. When SaaS Manual launched, we used Cloudflare to proxy requests to the Notion landing page.
-
-## Links
-
-[Visit Cloudflare here](https://cloudflare.com).

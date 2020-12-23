@@ -1,7 +1,7 @@
 ---
 draft: true
 keywords: plausible
-layout: default.njk
+layout: tool.njk
 title: Plausible
 website: https://daringfireball.net/projects/markdown/
 logo: plausible.svg
