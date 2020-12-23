@@ -2,7 +2,7 @@
 keywords: plausible
 layout: tool.njk
 title: Plausible
-website: https://daringfireball.net/projects/markdown/
+website: https://plausible.io
 logo: plausible.svg
 inUse: true
 ---
