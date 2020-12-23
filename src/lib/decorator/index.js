@@ -11,30 +11,30 @@ function createDictionary(ctx) {
     data.keywords && data.keywords.split(',').forEach((keyword) => {
       keyword = keyword.trim().toLowerCase();
       if (!dict[keyword]) dict[keyword] = {};
-      if (!dict[keyword][type]) dict[keyword][type] = [];
-      dict[keyword][type].push({
+      if (!dict[keyword][type]) dict[keyword][type] = {};
+      dict[keyword][type][file] = {
         title: data.title,
         link: `/${dirname(file)}`
-      });
+      }
     });
   }
   return dict;
 }
 
 function decorator(ctx) {
-  return () => {
+  return (a, b, c) => {
     const dict = createDictionary(ctx);
 
     return function transformer(tree, file) {
       visit(tree, 'text', visitor)
       function visitor(node) {
-        addDictionaryDefinitions(node, dict);
+        addDictionaryDefinitions(node, dict, ctx, file);
       }
     }
   }
 }
 
-const addDictionaryDefinitions = (node, dict) => {
+const addDictionaryDefinitions = (node, dict, ctx, file) => {
   const originalText = toString(node);
   const words = originalText.toLowerCase().split(' ');
   
@@ -45,6 +45,13 @@ const addDictionaryDefinitions = (node, dict) => {
     const match = dict[currentWord];
     
     if (match) {
+      for (const type in match) {
+        for (const reference in match[type]) {
+          if (!ctx[reference].data.backReferences) ctx[reference].data.backReferences = {};
+          ctx[reference].data.backReferences[file.path] = file.data;
+        }
+      }
+
       const characterPositionAfterMatch = currentCharacterPosition + currentWord.length;
       const textBeforeMatch = text.substring(0, currentCharacterPosition);
       const textAfterMatch = text.substring(characterPositionAfterMatch);
