@@ -1,14 +1,14 @@
 <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 mb-8 toc prose-sm">
-  {% for item in items %}
+  {% for item in items -%}
   <li class="col-span-1 flex flex-col items-center text-center bg-white rounded-lg shadow divide-y divide-gray-200">
     <div class="p-4 w-full bg-gray-50">
       <h3 class="text-gray-900 text-sm font-medium">{{ item.title }}</h3>
     </div>
     <div class="p-4 text-left w-full">
-      {% for topic in item.topics %}
+      {%- for topic in item.topics -%}
         <div>{{ topic.title }}</div>
-      {% endfor %}
+      {%- endfor -%}
     </div>
   </li>
-  {% endfor %}
+  {% endfor -%}
 </ul>
