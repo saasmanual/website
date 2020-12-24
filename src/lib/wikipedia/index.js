@@ -25,8 +25,8 @@ async function getWikipediaContent(node) {
       value: excerpt
     },
     {
-      type: 'html',
-      value: '&nbsp;'
+      type: 'text',
+      value: ' '
     },
     {
       type: 'element',
