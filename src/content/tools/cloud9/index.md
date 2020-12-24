@@ -7,7 +7,7 @@ logo: cloud9.svg
 inUse: false
 ---
 
-## How does SaaS Manual use Cloudflare?
+## How does SaaS Manual use Cloud9?
 
 I (Nikolai) am not using Cloud9 atm. I used to be the VP of Engineering at Cloud9 and left AWS in 2018.
 
