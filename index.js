@@ -12,6 +12,7 @@ import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
 import decorator from './src/lib/decorator';
+import wikipedia from './src/lib/wikipedia';
 import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed-image-builder]
 
 (new Generator)
@@ -27,6 +28,7 @@ import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed
   .useRemarkPlugin((ctx) => { return floatingImage; })
   .useRemarkPlugin((ctx) => { return iframe; })
   .useRemarkPlugin((ctx) => { return breaks; })
+  .useRemarkPlugin((ctx) => { return wikipedia; })
   .useRemarkPlugin((ctx) => { return embedImage; }) // [<embed:markdown-plugin-embed-image-builder]
   .useRemarkPlugin((ctx) => { 
     return { 
