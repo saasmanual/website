@@ -50,6 +50,7 @@
     "remark-breaks": "^2.0.1",
     "remark-directive": "^1.0.1",
     "remark-footnotes": "^3.0.0",
+    "sentence-splitter": "^3.2.0",
     "xmlbuilder2": "^2.4.0"
   },
   "devDependencies": {
