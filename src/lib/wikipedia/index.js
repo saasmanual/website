@@ -35,11 +35,12 @@ async function getWikipediaContent(node) {
         type: 'element',
         tagName: 'a',
         properties: {
-          href: `https://en.wikipedia.org/wiki/${title}`
+          href: `https://en.wikipedia.org/wiki/${title}`,
+          target: '_blank'
         },
         children: [{
           type: 'text',
-          value: 'Read more in Wikipedia'
+          value: 'Read more on Wikipedia'
         }]
       }]
     }
