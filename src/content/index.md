@@ -2,6 +2,7 @@
 layout: landing.njk
 title: SaaS Manual
 description: Learn how to build SaaS products from scratch.
+keywords: SaaS Manual, SaaS course, Learn building SaaS
 ---
 
 :::alert
