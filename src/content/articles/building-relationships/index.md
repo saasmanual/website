@@ -12,7 +12,7 @@ If you haven't signed up for this course yet, you can do so below:
 
 :iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
-I hope you had a really good start to this new week. Get ready for another SaaS Manual post. If this is your first email, you can [find previous posts here](../SaaS%20Manual%20bae9ae872a25499f9905f69ca26d1e27.md).
+I hope you had a really good start to this new week. Get ready for another SaaS Manual post. If this is your first email, you can [find previous posts here](/articles).
 
 In this post, let me dive a bit into my thinking around building a community and "customer" trust. You might wonder, why this topic now? Because this is what I was focusing on over the past two days. I still need to "catch up" and share how I actually built the SaaS Manual landing page, but I thought it might be nice to already show what I am working on. So let's dive right into it:
 

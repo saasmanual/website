@@ -16,7 +16,7 @@ If you haven't signed up for SaaS Manual yet, you can do so below:
 
 :iframe{src=https://landing.mailerlite.com/webforms/landing/b4c8x1 title="Join the SaaS Manual journey"}
 
-Welcome! Time for another post 🎉 Now that you have some context on [why I started SaaS Manual](2020-10-22%20Introduction%20422e0c9a4939447e8587d4229c2fcd3d.md), it finally is time to dive into how I launched the initial landing page at [https://saasmanual.com](https://saasmanual.com). With a very tiny budget and in a very short amount of time.
+Welcome! Time for another post 🎉 Now that you have some context on [why I started SaaS Manual](/articles/introduction), it finally is time to dive into how I launched the initial landing page at [https://saasmanual.com](https://saasmanual.com). With a very tiny budget and in a very short amount of time.
 
 ## Desired Outcome
 
@@ -42,7 +42,7 @@ Ok, here is the deal. To get the SaaS Manual landing page up and running, I simp
 
 I also had a look at [https://super.so/](https://super.so/) but you need to pay for their services. My current goal is to keep the budget low until SaaS Manual has meaningful revenue. That was all, done and dusted.
 
-The biggest amount of work was the creation of the content of the page. I initially started with [a simple outline](https://saasmanual.com/Initial-TOC-d2461f8c177643feb6447c69dd4b70d9) of all topics which I wanted to cover. I sat down, and just wrote down all topics which came to mind when thinking about building SaaS products. I then organized them into categories and added more content. After some time, I shared this list with two former colleagues at AWS who provided really valuable feedback. Thank you Reshen and Justin! 
+The biggest amount of work was the creation of the content of the page. I initially started with [a simple outline](https://www.notion.so/Initial-TOC-d2461f8c177643feb6447c69dd4b70d9) of all topics which I wanted to cover. I sat down, and just wrote down all topics which came to mind when thinking about building SaaS products. I then organized them into categories and added more content. After some time, I shared this list with two former colleagues at AWS who provided really valuable feedback. Thank you Reshen and Justin! 
 
 After this, I started writing the content for the landing page. I will cover this in a separate post, but the content is working well. **22% of visitors sign up for the list**. This is a really good conversion rate. 
 
