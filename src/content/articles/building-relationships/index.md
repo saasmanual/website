@@ -1,10 +1,11 @@
 ---
 layout: post.njk
 title: Building Relationships
-description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-sunset.jpeg
 date: 2020-10-27 17:15:00
 author: nonken
+description: Build great relationships with the people who are interested in your product or work. No matter how many or few. 
+keywords: saas manual, customer relationships, customer success
 excerpt: In this post, let me dive a bit into my thinking around building a community and "customer" trust. You might wonder, why this topic now? Because this is what I was focusing on over the past two days. I still need to "catch up" and share how I actually built the SaaS Manual landing page, but I thought it might be nice to already show what I am working on. So let's dive right into it...
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: landing.njk
 title: SaaS Manual
-description: Learn how to build SaaS products from scratch.
-keywords: SaaS Manual, SaaS course, Learn building SaaS
+description: Learn how to build SaaS products from scratch. SaaS Manual teaches you how to build commercial software services that are production-ready, scalable, maintainable, and secure.
+keywords: saas manual, saas course, build saas app, build saas product, saas howto
 ---
 
 :::alert
