@@ -23,11 +23,27 @@ function validateDescription(file, description) {
   return chalk.green(`✔`);
 }
 
+function validateKeywords(file, keywords) {
+  if (!keywords || !keywords.length) {
+    return `${chalk.red('✘')} (Required)`;
+  }
+
+  return chalk.green(`✔`);
+}
+
 async function seo(generator) {
-  const data = [[chalk.bold('File'), chalk.bold('Description')]];
+  const data = [[
+    chalk.bold('File'),
+    chalk.bold('Description'),
+    chalk.bold('Keywords')
+  ]];
 
   for (const file in generator.ctx) {
-    data.push([file, validateDescription(file, generator.ctx[file].data.description)]);
+    data.push([
+      file, 
+      validateDescription(file, generator.ctx[file].data.description),
+      validateKeywords(file, generator.ctx[file].data.keywords)
+    ]);
   }
   
   console.log(table(data, TABLE_CONFIG));
