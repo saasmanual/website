@@ -20,7 +20,7 @@ function validateDescription(file, description) {
     return `${chalk.red('✘')} (Between ${MIN_LENGTH} and ${MAX_LENGTH} chars.)`;
   }
 
-  return chalk.green(`✔`);
+  return `${chalk.green(`✔`)} (${description.length})`;
 }
 
 function validateKeywords(file, keywords) {
@@ -28,7 +28,7 @@ function validateKeywords(file, keywords) {
     return `${chalk.red('✘')} (Required)`;
   }
 
-  return chalk.green(`✔`);
+  return `${chalk.green(`✔`)} (${keywords.split(',').length})`;
 }
 
 async function seo(generator) {

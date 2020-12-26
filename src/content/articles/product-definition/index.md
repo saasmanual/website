@@ -1,10 +1,11 @@
 ---
 layout: post.njk
 title: Product Definition
-description: The direction of SaaS Manual is becoming more clear, so let me dive right in.
 cover: posts/twiske-water.jpeg
 date: 2020-12-22 11:24:00
 author: nonken
+keywords: product management, dogfooding, product direction
+description: Eating your own dogfood is something that I learned during my time at Cloud9 which later was acquired by AWS. It means that you use the software, which you build.
 excerpt: The direction of SaaS Manual is becoming more clear, so let me dive right in. First of all, since I [relaunched SaaS Manual](https://saasmanual.com/articles/moving-to-aws/) on AWS (Amazon Web Services), I have started to work on several new features. Notion was a great starting point for testing if SaaS Manual could provide value to folks, but it didn't allow me to build custom features, now this is possible, so let me share what's new
 ---
 

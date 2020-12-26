@@ -1,10 +1,11 @@
 ---
 layout: post.njk
 title: Introduction
-description: Learn how to build SaaS products from scratch.
 cover: posts/zandvoort-sun.jpeg
 date: 2020-10-22 17:15:00
 author: nonken
+description: Launching a new product doesn't happen overnight, instead it takes hundreds of steps. Instead of telling a success story, like "How I gained 500 email subscribers in one day", I will tell the SaaS Maual story as close to reality as it actually is.
+keywords: launching a startup, saas manual, startup transparency
 excerpt: Wow! Here we are, I announced [SaaS Manual](https://saasmanual.com) a week ago (October 15th, 2020) and by now 655 people have signed up to join this adventure. This is my first post to you and it is a bit of a read but I ask you to stay with me as it provides context on how this all started.
 ---
 
