@@ -3,9 +3,17 @@ import debug from 'debug';
 const log = debug('markdown-seo');
 
 function validateDescription(file, description) {
-  if (!description) log('Please provide a description for:', file);
-  else if (description.length < 55 || description.length > 300) {
-    log('Please provide a description between 55 and 300 characters:', file)
+  const MIN_LENGTH = 55;
+  const MAX_LENGTH = 300;
+  
+  if (!description) {
+    log('Please provide a description for:', file);
+    return;
+  }
+  
+  if (description.length < MIN_LENGTH || description.length > MAX_LENGTH) {
+    log(`Please provide a description between ${MIN_LENGTH} and ${MAX_LENGTH} characters:`, file)
+    return;
   }
 }
 
