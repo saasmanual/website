@@ -1,11 +1,12 @@
 ---
 layout: post.njk
 title: Launching on Product Hunt
-description: Learn how to build SaaS products from scratch.
 cover: posts/erp-sunset.jpeg
 date: 2020-11-10 17:15:00
 author: nonken
+description: Learn how to launch your SaaS product on Product Hunt. Let me share everything that I did to succesfully launch SaaS Manual on Product Hunt. 
 excerpt: Over the years, I have been part of several product launches. It always has been a really exciting time, we'd work really really hard on the next great idea or feature. We'd work day and night, trying to create something perfect which customers would love. This created a really strong feeling of togetherness and shared mission. I loved it. There is also another side to launching. Every other launch I have been part of had pretty much the exact same pattern (with different absolute ranges). So, let me share the launch metrics of the SaaS Manual website to give you an idea. 
+keywords: product hunt, launch saas product, saas manual, launch on product hunt
 ---
 
 Hope you all had a good start to the week! And if you haven't joined the SaaS Manual live community, feel free to join here: [https://discord.gg/gGTD6eX](https://discord.gg/gGTD6eX) - it is so cool to see how many wonderful people joined so far. 
