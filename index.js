@@ -13,7 +13,8 @@ import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
 import decorator from './src/lib/decorator';
 import wikipedia from './src/lib/wikipedia';
-import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed-image-builder]
+import embedImage from './src/lib/embed-image'; 
+import seo from './src/lib/seo'; 
 
 (new Generator)
   .templates('./src/template')
@@ -22,6 +23,7 @@ import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed
   .use(config)
   .use(meta)
   .use(sitemap)
+  .use(seo)
   .useRemarkPlugin((ctx) => { return directive; })
   .useRemarkPlugin((ctx) => { return toc; })
   .useRemarkPlugin((ctx) => { return alert; })
@@ -29,7 +31,7 @@ import embedImage from './src/lib/embed-image'; // [<embed:markdown-plugin-embed
   .useRemarkPlugin((ctx) => { return iframe; })
   .useRemarkPlugin((ctx) => { return breaks; })
   .useRemarkPlugin((ctx) => { return wikipedia; })
-  .useRemarkPlugin((ctx) => { return embedImage; }) // [<embed:markdown-plugin-embed-image-builder]
+  .useRemarkPlugin((ctx) => { return embedImage; }) 
   .useRemarkPlugin((ctx) => { 
     return { 
       plugin: footnotes, 
