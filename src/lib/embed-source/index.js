@@ -21,7 +21,7 @@ const CLONED_REPOS = {
   }
 }
 
-if (process.env.NODE_ENV === 'devselopment') {
+if (process.env.NODE_ENV === 'development') {
   CLONED_REPOS['https://github.com/saasmanual/shared-infrastructure'] = {
     id: 'https://github.com/saasmanual/shared-infrastructure',
     dir: '../shared-infrastructure',
