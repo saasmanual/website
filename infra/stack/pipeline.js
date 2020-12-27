@@ -13,6 +13,7 @@ class PipelineStack extends Stack {
     const cloudAssemblyArtifact = new Artifact('asmb');
     const { owner, name, secretArn, branch } = this.node.tryGetContext('repo');
 
+    // [embed: stack-pipeline-website]
     const pipeline = new CdkPipeline(this, 'Website', {
       pipelineName: 'Website',
       cloudAssemblyArtifact,
@@ -35,7 +36,9 @@ class PipelineStack extends Stack {
         buildCommand: 'npm run build',
       }),
     });
+    // [/embed]
 
+    // [embed: stack-pipeline-add-stage]
     const application = new Application(this, 'Website-Production', {
       stageName: 'Production',
       description: 'Website application stack running in us-east-1.',
@@ -45,6 +48,7 @@ class PipelineStack extends Stack {
     });
     
     const stage = pipeline.addApplicationStage(application);
+    // [/embed]
 
     const action = new ShellScriptAction({
       actionName: 'Clear-Cloudfront',
