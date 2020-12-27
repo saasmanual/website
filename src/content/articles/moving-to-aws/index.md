@@ -73,15 +73,7 @@ You might wonder, that's cool, but how do I set this up myself? This is where th
 
 In the past, you would log into the AWS console, and press a bunch of buttons, setting up the right tools... hopefully. It would be impossible to recreate the same environment without huge pain. When your service grew, you might have moved to CloudFormation to write complicated JSON or YAML files. So that you at least would be able to check your YAML files into a repo and apply source control. This still is quite painful if you ask me. CDK to the rescue. Now you can do cool stuff like this:
 
-```
-const websiteAssets = new S3.Bucket(this, `website-production-assets`, {
-  accessControl: BucketAccessControl.PUBLIC_READ,
-  bucketName: `saas-manual-website-prod-static-assets`,
-  publicReadAccess: true,
-  websiteIndexDocument: 'index.html',
-  websiteErrorDocument: '404/index.html'
-});
-```
+::embed-source{id=stack-website-s3-assets}
 
 I won't even explain what this does, because I am willing to bet that you can read this and understand what it does. With the CDK, you are now able to define your entire infrastructure and your deployment and testing infrastructure through code. This is how I did it:
 
@@ -90,17 +82,7 @@ I won't even explain what this does, because I am willing to bet that you can re
 Everything which I expect to be shared between services lives in a [shared infrastructure repository](https://github.com/saasmanual/shared-infrastructure). 
 This includes the Route53 setup for instance. Imagine at some point there will be a SaaS Manual API next to the website. Both API and website probably will use the same Route53 setup. That is why I have a dedicated setup for this. Here is how you set up a new hosted zone and a certificate using the CDK, it is basically awesome:
 
-```
-const zone = new PublicHostedZone(this, 'hosted-zone', {
-  zoneName: domainName
-});
-
-new DnsValidatedCertificate(this, 'certificate', {
-  domainName,
-  subjectAlternativeNames: [certificateAlternativeNames],
-  hostedZone: zone
-});
-```
+::embed-source{id=stack-public-hosted-zone repo=https://github.com/saasmanual/shared-infrastructure}
 
 Have a look at the entire repository, maybe [start from here](https://github.com/saasmanual/shared-infrastructure/blob/main/bin/pipeline.js).
 
@@ -108,33 +90,11 @@ Have a look at the entire repository, maybe [start from here](https://github.com
 
 Everything specific to the SaaS Manual website lives in the [website repository](https://github.com/saasmanual/website). The required infrastructure for the website is located in the `infra` folder. And the source for the website itself in the `src` directory. Here the interesting part is the setup of the pipeline which I described earlier. The CDK has a "construct" that allows you to set up a pipeline with just a few lines of code. 
 
-```
-const pipeline = new CdkPipeline(this, 'Website', {
-  pipelineName: 'Website',
-  cloudAssemblyArtifact,
-
-  sourceAction: new GitHubSourceAction({
-    // Removed to keep it brief.
-  }),
-
-  synthAction: SimpleSynthAction.standardNpmSynth({
-    sourceArtifact,
-    cloudAssemblyArtifact,
-    buildCommand: 'npm run build',
-  })
-});
-```
+::embed-source{id=stack-pipeline-website}
 
 A pipeline has different stages, often you would have a "staging" stage where you can test your deployment. If you have a large service you might have stages based on the regions your service is available in. SaaS Manual is a small site, and we just run in one region, anything more would be overkill. So we simply add one stage to the pipeline:
 
-```
-const application = new Application(this, 'Website-Production', {
-  stageName: 'Production',
-  description: 'Website application stack running in us-east-1.'
-});
-
-const stage = pipeline.addApplicationStage(application);
-```
+::embed-source{id=stack-pipeline-add-stage}
 
 The `Application` is the stack where you define the infrastructure for your application. In the case of SaaS Manual, this is the S3 bucket to host the static content and the CloudFront distribution. [Have a look here](https://github.com/saasmanual/website/blob/main/infra/stack/website.js) if you want to dive into this in more detail.
 

@@ -13,8 +13,9 @@ import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
 import decorator from './src/lib/decorator';
 import wikipedia from './src/lib/wikipedia';
-import embedImage from './src/lib/embed-image'; 
-import seo from './src/lib/seo'; 
+import embedImage from './src/lib/embed-image';
+import seo from './src/lib/seo';
+import embedSource from './src/lib/embed-source';
 
 (new Generator)
   .templates('./src/template')
@@ -32,6 +33,7 @@ import seo from './src/lib/seo';
   .useRemarkPlugin((ctx) => { return breaks; })
   .useRemarkPlugin((ctx) => { return wikipedia; })
   .useRemarkPlugin((ctx) => { return embedImage; }) 
+  .useRemarkPlugin((ctx) => { return embedSource; }) 
   .useRemarkPlugin((ctx) => { 
     return { 
       plugin: footnotes, 

@@ -41,6 +41,7 @@ class WebsiteStack extends Stack {
       }
     });
     
+    // [embed:stack-website-s3-assets]
     const websiteAssets = new Bucket(this, `${id}-website-production-assets`, {
       accessControl: BucketAccessControl.PUBLIC_READ,
       bucketName: `saas-manual-website-prod-static-assets`,
@@ -49,6 +50,7 @@ class WebsiteStack extends Stack {
       websiteErrorDocument: '404/index.html',
       websiteRoutingRules: redirectRules
     });
+    // [/embed]
 
     new BucketDeployment(this, 'DeployWebsite', {
       actionName: 'Website Deployment',
