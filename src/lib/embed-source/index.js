@@ -8,7 +8,7 @@ import parse5 from 'parse5';
 import tmp from 'tmp';
 import { readFileSync } from 'fs';
 import { execSync } from 'child_process';
-import { relative } from 'path'
+import { relative, join } from 'path'
 
 const log = debug('generator:embed-source');
 
@@ -41,6 +41,7 @@ async function getSnippets(repo) {
     let match;
     while ((match = tagRegex.exec(content))) {
       if (match[1]) {
+        console.log(repo.dir, file)
         stack.push({
           start: match.index,
           id: match[1],
@@ -69,6 +70,7 @@ async function cloneRepo(repo) {
   if (CLONED_REPOS[repo]) return CLONED_REPOS[repo];
 
   const tmpDir = tmp.dirSync();
+  const name = repo.split('/').pop();
 
   execSync(`git clone ${repo}`, {
     stdio: [0, 1, 2],
@@ -77,8 +79,8 @@ async function cloneRepo(repo) {
 
   return CLONED_REPOS[repo] = {
     id: repo,
-    dir: tmpDir.name,
-    url: repo
+    dir: `${tmpDir.name}/${name}`,
+    url: `${repo}/tree/main/`
   }
 }
 
@@ -96,7 +98,7 @@ function embed(node, snippets) {
       log(`No snipped with id '${node.attributes.id}' found.`);
       return;
     }
-    
+
     const lines = `#${match.lineStart && `L${match.lineStart}`}${match.lineEnd && `-L${match.lineEnd}`}`
     const repoLink = `${repo.url}${match.file}${lines}`;
     const code = `<div class="flex justify-end"><small><a href="${repoLink}" target="_blank">${CODE_SVG} View Code</a></small></div><pre class="mt-1">${Prism.highlight(match.content, Prism.languages.javascript, 'javascript')}</pre>`;
