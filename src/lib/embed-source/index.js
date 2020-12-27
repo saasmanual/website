@@ -98,7 +98,7 @@ function embed(node, snippets) {
       log(`No snipped with id '${node.attributes.id}' found.`);
       return;
     }
-    console.log(match.file)
+
     const lines = `#${match.lineStart && `L${match.lineStart}`}${match.lineEnd && `-L${match.lineEnd}`}`
     const repoLink = `${repo.url}${match.file}${lines}`;
     const code = `<div class="flex justify-end"><small><a href="${repoLink}" target="_blank">${CODE_SVG} View Code</a></small></div><pre class="mt-1">${Prism.highlight(match.content, Prism.languages.javascript, 'javascript')}</pre>`;
