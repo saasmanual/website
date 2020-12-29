@@ -8,6 +8,7 @@ import floatingImage from './src/lib/floating-image';
 import footnotes from 'remark-footnotes';
 import posts from './src/lib/posts';
 import tools from './src/lib/tools';
+import books from './src/lib/books';
 import config from './src/lib/config';
 import meta from './src/lib/meta';
 import sitemap from './src/lib/sitemap';
@@ -21,6 +22,7 @@ import embedSource from './src/lib/embed-source';
   .templates('./src/template')
   .use(posts)
   .use(tools)
+  .use(books)
   .use(config)
   .use(meta)
   .use(sitemap)
