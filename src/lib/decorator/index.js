@@ -18,6 +18,7 @@ function createDictionary(ctx) {
       }
     });
   }
+  
   return dict;
 }
 
@@ -57,8 +58,10 @@ const addDictionaryDefinitions = (node, dict, ctx, file) => {
       const textAfterMatch = text.substring(characterPositionAfterMatch);
       const oldPart = text.substring(currentCharacterPosition, characterPositionAfterMatch);
       const linkText = `<span class="border-pink-600 border-b-2 border-dotted cursor-default" x-data="tooltip('${encodeURIComponent(JSON.stringify(match))}')" @mouseenter="showTooltip($event, definition)" @mouseenter="showTooltip($event, definition)" @click="showTooltip($event, definition)">${oldPart}</span>`;
+      
       text = textBeforeMatch + linkText + textAfterMatch;
       currentCharacterPosition += linkText.length + 1;
+      
       continue;
     }
 
