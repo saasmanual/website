@@ -11,7 +11,7 @@ const formats = [{
   placeholder: '%ae',
   property: 'authorEmail'
 }, {
-  placeholder: '%cD',
+  placeholder: '%cd',
   property: 'dateTime'
 }, {
   placeholder: '%s',

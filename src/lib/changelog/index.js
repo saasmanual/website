@@ -4,7 +4,7 @@ import { writeFileSync, readFileSync } from 'fs';
 import { join } from 'path';
 
 async function changelog(generator) {
-  const source = spawn('git', ['log', gitFormat]);
+  const source = spawn('git', ['log', gitFormat, '--date', 'format:%b %d, %Y']);
 
   source.on('error', function (err) {
     console.log(`Something went wrong: ${err}`);
