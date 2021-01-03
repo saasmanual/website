@@ -65,6 +65,13 @@ async function parseCommits(readable) {
 
     commits.push(formats.reduce((commit, format, index) => {
       commit[format.property] = format.formatter ? format.formatter(parts[index]) : parts[index];
+
+      // I prefer to have this outside of the reduce call.
+      // But for now this works so I will leave it here.
+      if (format.property === 'sha') {
+        commit.gitHubCommitUrl = `https://github.com/saasmanual/website/commit/${parts[index]}`;
+      }
+
       return commit;
     }, {}));
   }
