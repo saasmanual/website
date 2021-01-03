@@ -17,6 +17,7 @@ import wikipedia from './src/lib/wikipedia';
 import embedImage from './src/lib/embed-image';
 import seo from './src/lib/seo';
 import embedSource from './src/lib/embed-source';
+import changelog from './src/lib/changelog';
 
 (new Generator)
   .templates('./src/template')
@@ -26,6 +27,7 @@ import embedSource from './src/lib/embed-source';
   .use(config)
   .use(meta)
   .use(sitemap)
+  .use(changelog)
   .use(seo)
   .useRemarkPlugin((ctx) => { return directive; })
   .useRemarkPlugin((ctx) => { return toc; })
